@@ -7,6 +7,9 @@
 /* Secondary colors */
   --picton_blue: #24a1ff;
   --sun_yellow: #ffc943;
+  /* Fonts */
+  --title_font: 'Gilroy_Black';
+  --text_font:'Crimson' ;
 }
 
 @font-face {
@@ -14,8 +17,7 @@
   src: url('../fonts/Gilroy-Black.otf') format('opentype');
 }
 
-/* body {
-  font-family: 'Crimson', sans-serif;
-  
-} */
+body {
+  font-family: 'Crimson', sans-serif; 
+}
 

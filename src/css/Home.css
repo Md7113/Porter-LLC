@@ -2,23 +2,22 @@
     width: 100%;
 }
 
-.home_page{
-    
+.home_page{  
     background-image: url('../images/Porter_LinkedIn_Cover_Black.png');
-    height: 100vh;
+    min-height: calc(100vh - 118px );
     background-size:cover;  
 }
 
 .home_content{
-    padding: 5%;
+    padding: 2% 5%;
 }
 
 h1{
     padding-top: 1%;
     font-size: 145px;
-    font-family: 'Gilroy_Black';
-    /* font-weight: black; */
+    font-family: var(--title_font);
     border-top: 10px solid var(--ebb_white);
     color: var(--ebb_white);
     width: 100%;
 }
+

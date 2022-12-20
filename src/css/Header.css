@@ -1,26 +1,31 @@
 .header_container {
-  background-color: var(--porter_black);
+	background-color: var(--porter_black);
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 30px;
+}
+
+/*********** Logo Image **************/
+.logo_img {
+	padding-left: 40px;
+	padding-top: 30px;
+	height: 85px;
+}
+
+/*********** Navigation Bar **************/
+.nav_container {
   display: flex;
-  justify-content: space-between;
- 
+  margin-right: 5%;
+  align-items: flex-end;
 }
-
-.logo_link{
-
+.navbar_nav {
+	display: flex;
 }
-
-.logo_img{
-    padding-left: 40px;
-    padding-top: 30px;
-    height: 85px;
+.nav_link {
+	color: var(--ebb_white);
+  margin: 0px 10px;
+  font-size: 24px;
 }
-
-.nav_container{
-
+.nav_link:hover{
+	color:var(--red_orange);
 }
-
-.navbar_nav{
-    display:flex;
-    color: var(--ebb_white);
-}
-
