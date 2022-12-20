@@ -9,9 +9,13 @@
   --sun_yellow: #ffc943;
 }
 
-
-
-body {
-  font-family: 'Crimson', sans-serif;
+@font-face {
+  font-family: 'Gilroy_Black';
+  src: url('../fonts/Gilroy-Black.otf') format('opentype');
 }
+
+/* body {
+  font-family: 'Crimson', sans-serif;
+  
+} */
 

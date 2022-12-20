@@ -1,0 +1,26 @@
+.header_container {
+  background-color: var(--porter_black);
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.logo_link{
+
+}
+
+.logo_img{
+    padding-left: 40px;
+    padding-top: 30px;
+    height: 85px;
+}
+
+.nav_container{
+
+}
+
+.navbar_nav{
+    display:flex;
+    color: var(--ebb_white);
+}
+
