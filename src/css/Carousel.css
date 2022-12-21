@@ -5,7 +5,7 @@
    bottom:3%;
 }
 
-.carousel_Project_card{
+.carousel_Project_card {
    width: 100%;
    height: 100%;
    display: flex;
@@ -14,11 +14,11 @@
    color: var(--ebb_white)
 }
 
-.carousel_padding{
+.carousel_padding {
    padding: 10px;
 }
 
-.Lower_line_break{
+.Lower_line_break {
    margin: 10px;
    padding: 2px;
    background-color: var(--ebb_white);
@@ -28,27 +28,27 @@
    padding: 4px;
    background-color: var(--ebb_white);
 }
-.project_title{
+.project_title {
    display: flex;
 }
-.project_name{
+.project_name {
    font-size: 26px;
 }
-.project_location{
+.project_location {
    align-self: flex-end;
    font-size: 16px;
 }
-.project_link{
+.project_link {
    display: flex;
 }
-.project_link img{
+.project_link img {
    width: 80%;
 }
-.arrow{
+.arrow {
    justify-content: center;
    align-items: center;
    color: var(--red_orange);
 }
-.arrow img{
+.arrow img {
    width: 100px;
 }

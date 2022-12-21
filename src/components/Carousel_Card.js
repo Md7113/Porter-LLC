@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/Carousel.css';
 import arrow from '../images/side-arrow.png';
-import img1 from '../images/shriners.png';
+// import img1 from '../images/shriners.png';
 import { Link } from 'react-router-dom';
 // {
 //     businessName: '',
@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 //     relevance: '',
 //     serviceProvided:''
 // }
-function Carousel_Card({ project }) {
+function Carousel_Card({ project, image }) {
 	return (
 		<div className="carousel_Project_card">
 			<hr className="head_line_break" />
@@ -28,7 +28,8 @@ function Carousel_Card({ project }) {
 			<hr className="Lower_line_break"></hr>
 			<Link className="project_link">
 				<div className="carousel_padding">
-					<img src={img1} />
+					{/* <img src={img1} /> */}
+					<img src={image} />
 				</div>
 				<div className="project_link arrow">
 					<span>VIEW PROJECT</span>
