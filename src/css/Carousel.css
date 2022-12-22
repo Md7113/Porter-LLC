@@ -1,12 +1,41 @@
 .carousel{
-   position:absolute;
+   position: absolute;
    width: 30%;
    left: 5%;
    bottom:3%;
 }
 
+.carousel_arrows{
+   position:absolute;
+   top:-5%;
+   right:18%;
+}
+
+.arrows{
+   margin: 0 15px;
+   width: 30px;
+}
+
+/************** This worked, just doesn't go where we want ******************/
+/* .arrow {
+   position: absolute;
+   z-index: 5;
+   top: 50%;
+   color:aliceblue;
+ }
+ 
+ .right {
+   right: 0;
+   color:aliceblue;
+ }
+ 
+ .left {
+   left: 0;
+   color:aliceblue;
+ } */
+ 
 .carousel_Project_card {
-   width: 100%;
+   width: 80%;
    height: 100%;
    display: flex;
    flex-direction: column;
