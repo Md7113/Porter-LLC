@@ -35,7 +35,7 @@ const About_Us_Page = () => {
 							exceptional results. Partner with us today
 						</p>
 					</div>
-					<img src={About_img}/>
+					<img src={About_img} alt= ''/>
 				</div>
 			</div>
 			<div className="Our_Team_content">

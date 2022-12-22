@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/Carousel.css';
 import arrow from '../images/side-arrow.png';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 // {
 //     businessName: '',
@@ -16,7 +16,13 @@ import { Link } from 'react-router-dom';
 //     serviceProvided:''
 // }
 
-function Carousel_Card({ project, image }) {
+function Carousel_Card({ project, image, handleCurrentProject }) {
+	const navigate = useNavigate();
+	function handleProjectSave(e){
+		handleCurrentProject(project)
+		navigate('/project',  {state: {currentProject: {project}}});
+	}
+
 	return (
 		<div className="carousel_Project_card">
 			<hr className="head_line_break" />
@@ -27,16 +33,15 @@ function Carousel_Card({ project, image }) {
 			<hr className="Lower_line_break "></hr>
 			<p className="carousel_padding">{project.description_short}</p>
 			<hr className="Lower_line_break"></hr>
-			<Link className="project_link">
+			<div className="project_link" onClick = {handleProjectSave} >
 				<div className="carousel_padding">
-					{/* <img src={img1} /> */}
-					<img src={image} />
+					<img src={image.image} alt= {image.alt}/>
 				</div>
 				<div className="project_link arrow">
 					<span>VIEW PROJECT</span>
-					<img src={arrow} alt="arrow" />
+					<img src={arrow} alt="right arrow" />
 				</div>
-			</Link>
+			</div>
 
 			<hr className="Lower_line_break"></hr>
 		</div>

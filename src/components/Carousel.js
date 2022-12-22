@@ -10,10 +10,9 @@ import img4 from '../images/ucDavisCancer_project4.png';
 import rightArrow from '../images/right-arrow.png';
 import leftArrow from '../images/left-arrow.png';
 
-
 let projects = projectFile();
-export default function MultiCarousel() {
-	const images = [img1, img2, img3, img4];
+export default function MultiCarousel({ handleCurrentProject }) {
+	const images = [{image: img1,alt:''}, {image: img2, alt: ''}, {image: img3, alt: ''}, {image: img4, alt:''}];
 	const responsive = {
 		desktop: {
 			breakpoint: { max: 4000, min: 1024 },
@@ -25,29 +24,17 @@ export default function MultiCarousel() {
 		},
 	};
 
-	// const CustomRight = ({ onClick }) => (
-	// 	<button className="arrow right" onClick={onClick}>
-	// 		right
-	// 	</button>
-	// );
-	// const CustomLeft = ({ onClick }) => (
-	// 	<button className="arrow left" onClick={onClick}>
-	// 		left
-	// 	</button>
-	// );
 	const CustomButtonGroupAsArrows = ({ next, previous }) => {
 		return (
 			<div className="carousel_arrows">
-				<img className="arrows" onClick={previous} src={leftArrow}></img>
-				<img className="arrows" onClick={next} src={rightArrow}></img>
+				<img className="arrows" onClick={previous} src={leftArrow} alt= "left arrow" />
+				<img className="arrows" onClick={next} src={rightArrow} alt= "right arrow" />
 			</div>
 		);
 	};
 
 	return (
 		<div className="carousel">
-			{/* <button onClick={previous}>Prev</button>
-			<button onClick={next}>Next</button> */}
 			<Carousel
 				arrows={false}
 				responsive={responsive}
@@ -63,6 +50,7 @@ export default function MultiCarousel() {
 			>
 				{projects.map((project, index) => (
 					<ProjectCard
+						handleCurrentProject={handleCurrentProject}
 						key="project.id"
 						project={project}
 						image={images[index]}
@@ -72,3 +60,15 @@ export default function MultiCarousel() {
 		</div>
 	);
 }
+
+// save
+// const CustomRight = ({ onClick }) => (
+// 	<button className="arrow right" onClick={onClick}>
+// 		right
+// 	</button>
+// );
+// const CustomLeft = ({ onClick }) => (
+// 	<button className="arrow left" onClick={onClick}>
+// 		left
+// 	</button>
+// );
