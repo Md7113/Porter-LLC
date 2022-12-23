@@ -3,24 +3,11 @@ import '../css/Carousel.css';
 import arrow from '../images/side-arrow.png';
 import { useNavigate } from 'react-router-dom';
 
-// {
-//     businessName: '',
-//     location: '',
-//     description_short: '',
-//     description: '',
-//     size: '',
-//     budget: '',
-//     owner:'',
-//     architectRecord: '',
-//     relevance: '',
-//     serviceProvided:''
-// }
-
 function Carousel_Card({ project, image, handleCurrentProject }) {
 	const navigate = useNavigate();
-	function handleProjectSave(e){
+	function handleProjectSave(){
 		handleCurrentProject(project)
-		navigate('/project',  {state: {currentProject: {project}}});
+		navigate('/project',  {state: {currentProject: {project}}, image: {image}});
 	}
 
 	return (

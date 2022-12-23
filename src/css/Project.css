@@ -1,0 +1,50 @@
+/*  main container */
+.project_section {
+    background-color: var(--porter_black);
+    color:var(--ebb_white);
+}
+.project_container {
+	display: flex;
+	margin-left: 5%;
+
+}
+
+/* business name, location and description */
+.project_content {
+	margin-top: 4%;
+	display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 3%;
+}
+.project_title_content {
+    display: flex;
+	flex-direction: column;
+}
+.project_details{
+    margin: 10px;
+}
+.project_name_section{
+    margin: 10px;
+    font-size: 40px;
+}
+.project_description_section{
+    line-height: 25px;
+}
+
+/* images */
+.project_img_container {
+	display: flex;
+	height: 87vh;
+	margin-right: 5%;
+}
+.project_main_img {
+	width: 50vw;
+	margin: 4.2%;
+}
+.project_small_img {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
