@@ -12,7 +12,7 @@ import leftArrow from '../images/left-arrow.png';
 
 let projects = projectFile();
 export default function MultiCarousel({ handleCurrentProject }) {
-	const images = [{image: img1,alt:''}, {image: img2, alt: ''}, {image: img3, alt: ''}, {image: img4, alt:''}];
+	const images = [{image: img1, alt:''}, {image: img2, alt: ''}, {image: img3, alt: ''}, {image: img4, alt:''}];
 	const responsive = {
 		desktop: {
 			breakpoint: { max: 4000, min: 1024 },

@@ -10,6 +10,24 @@
   /* Fonts */
   --title_font: 'Gilroy_Black';
   --text_font:'Crimson' ;
+  /* Title Font Sizes */
+  --t1: 225pt;
+  --t2: 115pt;
+  --t3: 85pt;
+  --t4: 65pt;
+  --t5: 39pt;
+  --t6: 18pt;
+  --t7: 9pt;
+  /* Body Font Sizes */
+  --f1: 15pt;
+  --f2: 9pt;
+  --f3: 7pt;
+}
+
+.title1 {
+  font-family: var(--title_font); 
+  text-transform: uppercase;
+  font-size: var(--t2);
 }
 
 @font-face {
