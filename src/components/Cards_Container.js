@@ -1,10 +1,12 @@
 import React from 'react';
+import '../css/Cards_Container.css';
 
-const Row_Card = (props) => {
+const Cards_Container = (props) => {
     let classes = 'card_row ' + props.className;
+
     return (
         <div className={classes}>{props.children}</div>
     );
 }
 
-export default Row_Card;
+export default Cards_Container;
