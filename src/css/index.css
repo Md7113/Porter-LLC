@@ -12,6 +12,8 @@
   --text_font:'Crimson' ;
   /* Title Font Sizes */
   --t1: 225pt;
+  --tcustom1: 175pt;
+  --tcustom2: 140pt;
   --t2: 115pt;
   --t3: 85pt;
   --t4: 65pt;
@@ -27,7 +29,6 @@
 .title1 {
   font-family: var(--title_font); 
   text-transform: uppercase;
-  font-size: var(--t2);
 }
 
 @font-face {
@@ -39,3 +40,60 @@ body {
   font-family: 'Crimson', sans-serif; 
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .title1 {
+    font-family: var(--title_font); 
+    text-transform: uppercase;
+    font-size: var(--t5);
+  }
+  
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .title1 {
+    font-family: var(--title_font); 
+    text-transform: uppercase;
+    font-size: var(--t5);
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .title1 {
+    font-family: var(--title_font); 
+    text-transform: uppercase;
+    font-size: var(--t4);
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .title1 {
+    font-family: var(--title_font); 
+    text-transform: uppercase;
+    font-size: var(--t3);
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1311px) {
+  .title1 {
+    font-family: var(--title_font); 
+    text-transform: uppercase;
+    font-size: var(--t2);
+  }
+}
+
+@media only screen and (min-width: 1593px) {
+  .title1 {
+    font-family: var(--title_font); 
+    text-transform: uppercase;
+    font-size: var(--tcustom2);
+  }
+}
+
+@media only screen and (min-width: 1988px) {
+  .title1 {
+    font-family: var(--title_font); 
+    text-transform: uppercase;
+    font-size: var(--tcustom1);
+  }
+}
