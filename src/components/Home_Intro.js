@@ -1,5 +1,5 @@
 import React from 'react';
-import InformationCard from './InformationCard';
+import Home_Info from './Home_Info';
 import '../css/Home_Intro.css'
 
 const Home_Intro = () => {
@@ -19,7 +19,7 @@ const Home_Intro = () => {
                     Projects and counting
                 </div>
             </div>
-            <InformationCard />
+            <Home_Info />
 
         </div>
     )

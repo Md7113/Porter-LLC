@@ -1,6 +1,6 @@
 import React from 'react';
 import homeInfo from '../utils/home_info';
-import Card from './Row_Card';
+import CardContainer from './Cards_Container';
 
 
 const Home_Info = () => {
@@ -10,7 +10,7 @@ const Home_Info = () => {
     const line3 = homeContent[2];
 
     return (<div className="">
-        <Card>
+        <CardContainer>
             <div className="">
                 {line1.section1}
             </div>
@@ -20,8 +20,8 @@ const Home_Info = () => {
             <div className="">
                 {line1.section3}
             </div>
-        </Card>
-        <Card>
+        </CardContainer>
+        <CardContainer>
             <div className="">
                 {line2.section1}
             </div>
@@ -31,8 +31,8 @@ const Home_Info = () => {
             <div className="">
                 {line2.section3}
             </div>
-        </Card>
-        <Card>
+        </CardContainer>
+        <CardContainer>
             <div className="">
                 {line3.section1}
             </div>
@@ -42,7 +42,7 @@ const Home_Info = () => {
             <div className="">
                 {line3.section3}
             </div>
-        </Card>
+        </CardContainer>
     </div>)
 }
 

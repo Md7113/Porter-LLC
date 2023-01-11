@@ -45,8 +45,6 @@ export default function MultiCarousel({ handleCurrentProject }) {
 				containerClass="container"
 				renderButtonGroupOutside={true}
 				customButtonGroup={<CustomButtonGroupAsArrows />}
-				// customRightArrow={<CustomRight />}
-				// customLeftArrow={<CustomLeft />}
 			>
 				{projects.map((project, index) => (
 					<ProjectCard
@@ -60,15 +58,3 @@ export default function MultiCarousel({ handleCurrentProject }) {
 		</div>
 	);
 }
-
-// save
-// const CustomRight = ({ onClick }) => (
-// 	<button className="arrow right" onClick={onClick}>
-// 		right
-// 	</button>
-// );
-// const CustomLeft = ({ onClick }) => (
-// 	<button className="arrow left" onClick={onClick}>
-// 		left
-// 	</button>
-// );
