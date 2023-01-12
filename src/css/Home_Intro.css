@@ -1,3 +1,6 @@
-.Intro_Title {
+.intro_title {
     font-family: var(--title_font);
+    margin: 30px;
+    font-size: 80px;
 }
+

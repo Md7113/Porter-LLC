@@ -1,4 +1,10 @@
 .card_row {
     display: flex;
     justify-content: space-evenly;
+    margin: 20px; 
+}
+
+.card_row div {
+    width: 33%;
+    height: 150px;
 }
