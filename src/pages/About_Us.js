@@ -31,7 +31,7 @@ const About_Us_Page = () => {
                         <br />
 						<p>
 							Our unmatched decades of experience are brought to bear on every
-							program we manage. Whatever stage you’re in, Porter can deliver
+							program we manage. Whatever stage you\'re in, Porter can deliver
 							exceptional results. Partner with us today
 						</p>
 					</div>

@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/Home.css';
 import Carousel from '../components/Carousel';
 import '../css/Carousel.css';
-import HomeInfo from '../components/Home_Info';
+import HomeIntro from '../components/Home_Intro';
 
 const Home_Page = ({handleCurrentProject}) => {
 	return (
@@ -15,7 +15,7 @@ const Home_Page = ({handleCurrentProject}) => {
 				</div>
 			</div>
 		</div>
-		<HomeInfo/>
+		<HomeIntro/>
 		</>
 	);
 };
