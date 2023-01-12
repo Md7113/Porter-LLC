@@ -1,8 +1,9 @@
 import React from 'react';
 
-const Card_Text = () => {
+const Card_Text = (props) => {
+  let classes = 'card_row ' + props.className;
   return (
-    <div>Card_Text</div>
+    <div classes = {classes}>{props.content}</div>
   )
 }
 
