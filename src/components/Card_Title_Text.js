@@ -1,9 +1,14 @@
 import React from 'react'
 
 const Card_Title_Text = () => {
-  return (
-    <div>Card_Title_Text</div>
-  )
+    let classes = ' ' + props.className;
+    return (
+      <div classes= {classes}>
+        <h3>{props.title}</h3>
+        <p>{props.content}</p>
+        
+      </div>
+    );
 }
 
-export default Card_Title_Text
+export default Card_Title_Text;
