@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/About_Us.css';
 import About_img from '../images/about-us.png';
+import AboutUsInfo from '../components/About_Us_Info';
 
 const About_Us_Page = () => {
 	return (
@@ -39,8 +40,9 @@ const About_Us_Page = () => {
 				</div>
 			</div>
 			<div className="Our_Team_content">
-				<h1>OUR TEAM</h1>
+				<h1>OUR TEAM/SERVICES</h1>
 			</div>
+			<AboutUsInfo/>
 		</div>
 	);
 };
