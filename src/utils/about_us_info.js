@@ -1,0 +1,22 @@
+const aboutUsInfo = () => {
+    let aboutUsInformation = [
+        // {
+        //     section1: ['Jimmy John', 'Jimmy is a stand up consultant, he works very hard. Jimmy is a stand up consultant, he works very hard. Jimmy is a stand up consultant, he works very hard. Jimmy is a stand up consultant, he works very hard. Jimmy is a stand up consultant, he works very hard. Jimmy is a stand up consultant, he works very hard. Jimmy is a stand up consultant, he works very hard.'],
+        //     section2: ['Linda Lewis', 'Linda never backs down from an opportunity, her voracious ambition knows no bounds. Linda never backs down from an opportunity, her voracious ambition knows no bounds. Linda never backs down from an opportunity, her voracious ambition knows no bounds. Linda never backs down from an opportunity, her voracious ambition knows no bounds. Linda never backs down from an opportunity, her voracious ambition knows no bounds. Linda never backs down from an opportunity, her voracious ambition knows no bounds. Linda never backs down from an opportunity, her voracious ambition knows no bounds.'],
+        //     section3: ['Jeffy Jefferson', 'Jeffy worked with his hands for years before finding a more impactful method of construction helping build others\' ideas. Jeffy worked with his hands for years before finding a more impactful method of construction helping build others\' ideas. Jeffy worked with his hands for years before finding a more impactful method of construction helping build others\' ideas. Jeffy worked with his hands for years before finding a more impactful method of construction helping build others\' ideas.']
+        // },
+        {
+            section1: ['Project Management', 'We manage your project so you don\'t have to. We manage your project so you don\'t have to. We manage your project so you don\'t have to. We manage your project so you don\'t have to. We manage your project so you don\'t have to.'],
+            section2: ['Scheduling', 'Have you ever been out at the store and realized you forgot to bring your shopping list? We write the list, go to the store AND cook the food. Have you ever been out at the store and realized you forgot to bring your shopping list? We write the list, go to the store AND cook the food. Have you ever been out at the store and realized you forgot to bring your shopping list? We write the list, go to the store AND cook the food. Have you ever been out at the store and realized you forgot to bring your shopping list? We write the list, go to the store AND cook the food. Have you ever been out at the store and realized you forgot to bring your shopping list? We write the list, go to the store AND cook the food. Have you ever been out at the store and realized you forgot to bring your shopping list? We write the list, go to the store AND cook the food.'],
+            section3: ['Constructability Review', 'Large companies rely on us to review the potential of their vision. Large companies rely on us to review the potential of their vision. Large companies rely on us to review the potential of their vision. Large companies rely on us to review the potential of their vision. Large companies rely on us to review the potential of their vision.'],
+        },
+        {
+            section1: ['Value Engineering', 'Sometimes you \'get what you pay for\', other times you get more. Porter always gets more. What porter gets now is yours. Sometimes you \'get what you pay for\', other times you get more. Porter always gets more. What porter gets now is yours. Sometimes you \'get what you pay for\', other times you get more. Porter always gets more. What porter gets now is yours.'],
+            section2: ['Asset/Infrastructure Assessment', 'Asset assessment is something that we do here at Porter. You have assets? We assess them. Asset assessment is something that we do here at Porter. You have assets? We assess them. Asset assessment is something that we do here at Porter. You have assets? We assess them.'],
+            section3: ['Sustainability', 'The buildings we help create are epitome of sustainability. They will stand for generations beyond measure. The buildings we help create are epitome of sustainability. They will stand for generations beyond measure. The buildings we help create are epitome of sustainability. They will stand for generations beyond measure.']
+        }
+    ];
+    return aboutUsInformation;
+};
+
+export default aboutUsInfo;
