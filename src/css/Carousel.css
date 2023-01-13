@@ -1,13 +1,12 @@
 .carousel{
-   position: relative;
+   position: absolute;
    width: 30%;
    left: 5%;
-   margin-top: auto;
-   margin-bottom: auto;
+   bottom:3%;
 }
 
 .carousel_arrows{
-   position:relative;
+   position:absolute;
    top:-6%;
    right:18%;
 }
