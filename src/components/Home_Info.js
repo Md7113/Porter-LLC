@@ -5,6 +5,7 @@ import '../css/Home_Info.css';
 import TextLink from './Card_Text_Link';
 import TextCard from './Card_Text';
 import TextTitle from './Card_Title_Text';
+import '../css/Card_Text.css';
 
 const Home_Info = () => {
 	const homeContent = homeInfo();
@@ -14,8 +15,7 @@ const Home_Info = () => {
 
 	return (
 		<section className="display_rows">
-			<hr />
-			<CardContainer className="">
+			<CardContainer className="border_top">
 				<TextCard className="" content={line1.section1} />
                 <TextTitle className=""
 					title={line1.section2[0]}
@@ -24,7 +24,7 @@ const Home_Info = () => {
 					title={line1.section3[0]}
 					content={line1.section3[1]}/>
 			</CardContainer>
-			<CardContainer>
+			<CardContainer >
 				<TextLink
 					className=""
 					title={line2.section1[0]}
