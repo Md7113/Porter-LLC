@@ -7,8 +7,8 @@ import img1 from '../images/shriners.png';
 import img2 from '../images/kaiser_project2.png';
 import img3 from '../images/ucsfParking_project3.png';
 import img4 from '../images/ucDavisCancer_project4.png';
-import rightArrow from '../images/right-arrow.png';
-import leftArrow from '../images/left-arrow.png';
+import rightArrow from '../images/rightArrow.svg';
+import leftArrow from '../images/leftArrow.svg';
 
 let projects = projectFile();
 export default function MultiCarousel({ handleCurrentProject }) {

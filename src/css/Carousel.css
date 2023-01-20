@@ -4,14 +4,12 @@
    left: 5%;
    bottom:3%;
 }
-
-.carousel_arrows{
+.carousel_arrows {
    position:absolute;
    top:-6%;
-   right:18%;
+   right:21%;
 }
-
-.arrows{
+.arrows {
    margin: 0 15px;
    width: 30px;
 }
@@ -23,12 +21,10 @@
    top: 50%;
    color:aliceblue;
  }
- 
  .right {
    right: 0;
    color:aliceblue;
  }
- 
  .left {
    left: 0;
    color:aliceblue;
@@ -69,6 +65,7 @@
 }
 .project_link {
    display: flex;
+   padding-left: 40px;
 }
 .project_link img {
    width: 80%;
@@ -78,6 +75,7 @@
    align-items: center;
    color: var(--red_orange);
 }
-.arrow img {
-   width: 100px;
+
+.arrow_link{
+   padding: 20px 25px 20px 20px;
 }
