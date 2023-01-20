@@ -1,4 +1,5 @@
 import React from 'react'
+import '../css/Card_Title_Text.css';
 
 const Card_Title_Text = (props) => {
     let classes = ' ' + props.className;

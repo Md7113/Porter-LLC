@@ -5,7 +5,7 @@ const Cards_Container = (props) => {
     let classes = 'card_row ' + props.className;
 
     return (
-        <div className={classes}>{props.children}</div>
+        <div className={classes}> {props.children}</div>
     );
 }
 
