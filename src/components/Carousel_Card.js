@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/Carousel.css';
-import arrow from '../images/side-arrow.png';
+import arrow from '../images/rightArrow.svg';
 import { useNavigate } from 'react-router-dom';
 
 function Carousel_Card({ project, image, handleCurrentProject }) {
@@ -26,7 +26,7 @@ function Carousel_Card({ project, image, handleCurrentProject }) {
 				</div>
 				<div className="project_link arrow">
 					<span>VIEW PROJECT</span>
-					<img src={arrow} alt="right arrow" />
+					<img className='arrow_link' src={arrow} alt="right arrow" />
 				</div>
 			</div>
 

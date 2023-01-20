@@ -6,6 +6,7 @@ import TextLink from './Card_Text_Link';
 import TextCard from './Card_Text';
 import TextTitle from './Card_Title_Text';
 import '../css/Card_Text.css';
+import Fade from 'react-reveal/Fade';
 
 const Home_Info = () => {
 	const homeContent = homeInfo();
@@ -15,16 +16,17 @@ const Home_Info = () => {
 
 	return (
 		<section className="display_rows">
-			<CardContainer className="border_top">
+			<Fade bottom>
+			<CardContainer className="border_top card_padding">
 				<TextCard className="" content={line1.section1} />
-                <TextTitle className=""
+                <TextTitle className="year"
 					title={line1.section2[0]}
 					content={line1.section2[1]}/>
                 <TextTitle className=""
 					title={line1.section3[0]}
 					content={line1.section3[1]}/>
 			</CardContainer>
-			<CardContainer >
+			<CardContainer className="card_padding">
 				<TextLink
 					className=""
 					title={line2.section1[0]}
@@ -40,12 +42,13 @@ const Home_Info = () => {
 					title={line2.section2[0]}
 					content={line2.section2[1]}
 				/>
-			</CardContainer>
-			<CardContainer>
+			</CardContainer >
+			<CardContainer className="card_padding">
 				<TextCard className="" content={line3.section1} />
 				<TextCard className="" content={line3.section2} />
 				<TextCard className="" content={line3.section3} />
 			</CardContainer>
+			</Fade>
 		</section>
 	);
 };
