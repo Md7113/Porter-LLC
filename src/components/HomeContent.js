@@ -1,14 +1,13 @@
 import React from 'react';
-import homeInfo from '../utils/home_info';
-import CardContainer from './Cards_Container';
-import '../css/Home_Info.css';
-import TextLink from './Card_Text_Link';
-import TextCard from './Card_Text';
-import TextTitle from './Card_Title_Text';
-import '../css/Card_Text.css';
+import homeInfo from '../utils/homeContent';
+import CardContainer from './CardsContainer';
+import '../css/HomeContent.css';
+import TextLink from './CardTextLink';
+import TextCard from './CardText';
+import TextTitle from './CardTitleText';
 import Fade from 'react-reveal/Fade';
 
-const Home_Info = () => {
+const HomeContent = () => {
 	const homeContent = homeInfo();
 	const line1 = homeContent[0];
 	const line2 = homeContent[1];
@@ -18,39 +17,41 @@ const Home_Info = () => {
 		<section className="display_rows">
 			<Fade bottom>
 			<CardContainer className="border_top card_padding">
-				<TextCard className="" content={line1.section1} />
-                <TextTitle className="year"
+				<TextCard className="line_spacing" content={line1.section1} />
+                <TextTitle className="font_title"
 					title={line1.section2[0]}
 					content={line1.section2[1]}/>
-                <TextTitle className=""
+                <TextTitle className="font_title"
 					title={line1.section3[0]}
 					content={line1.section3[1]}/>
 			</CardContainer>
+			<hr className='hr'/>
 			<CardContainer className="card_padding">
 				<TextLink
-					className=""
+					className="line_spacing"
 					title={line2.section1[0]}
 					content={line2.section1[1]}
 				/>
 				<TextLink
-					className=""
+					className="line_spacing"
 					title={line2.section2[0]}
 					content={line2.section2[1]}
 				/>
 				<TextLink
-					className=""
+					className="line_spacing contrast_card"
 					title={line2.section2[0]}
 					content={line2.section2[1]}
 				/>
 			</CardContainer >
+			<hr className='hr'/>
 			<CardContainer className="card_padding">
-				<TextCard className="" content={line3.section1} />
-				<TextCard className="" content={line3.section2} />
-				<TextCard className="" content={line3.section3} />
+				<TextCard className="line_spacing padding_btm" content={line3.section1} />
+				<TextCard className="line_spacing" content={line3.section2} />
+				<TextCard className="line_spacing" content={line3.section3} />
 			</CardContainer>
 			</Fade>
 		</section>
 	);
 };
 
-export default Home_Info;
+export default HomeContent;

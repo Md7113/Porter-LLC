@@ -2,9 +2,9 @@ import React from 'react';
 import '../css/Home.css';
 import Carousel from '../components/Carousel';
 import '../css/Carousel.css';
-import HomeIntro from '../components/Home_Intro';
+import HomeHero from '../components/HomeHero';
 
-const Home_Page = ({handleCurrentProject}) => {
+const HomePage = ({handleCurrentProject}) => {
 	return (
 		<>
 		<div className="home_page">
@@ -15,9 +15,9 @@ const Home_Page = ({handleCurrentProject}) => {
 				</div>
 			</div>
 		</div>
-		<HomeIntro/>
+		<HomeHero/>
 		</>
 	);
 };
 
-export default Home_Page;
+export default HomePage;

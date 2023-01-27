@@ -1,7 +1,7 @@
 import React from 'react';
-import '../css/Cards_Container.css';
+import '../css/CardsContainer.css';
 
-const Cards_Container = (props) => {
+const CardsContainer = (props) => {
     let classes = 'card_row ' + props.className;
 
     return (
@@ -9,4 +9,4 @@ const Cards_Container = (props) => {
     );
 }
 
-export default Cards_Container;
+export default CardsContainer;

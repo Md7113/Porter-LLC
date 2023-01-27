@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Card_Title_Text = (props) => {
-  let classes = ' ' + props.className;
+const CardTitleText = (props) => {
+  let classes = 'text_link_format ' + props.className;
 	return (
-		<div classes= {classes}>
+		<div className= {classes}>
 			<h3>{props.title}</h3>
 			<p>{props.content}</p>
 			<Link to="/projects">VIEW ALL PROJECTS</Link>
@@ -12,4 +12,4 @@ const Card_Title_Text = (props) => {
 	);
 };
 
-export default Card_Title_Text;
+export default CardTitleText;

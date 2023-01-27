@@ -1,8 +1,8 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import ProjectCard from './Carousel_Card';
-import projectFile from '../utils/project_file';
+import ProjectCard from './CarouselCard';
+import projectFile from '../utils/projectFile';
 import img1 from '../images/shriners.png';
 import img2 from '../images/kaiser_project2.png';
 import img3 from '../images/ucsfParking_project3.png';
@@ -36,22 +36,22 @@ export default function MultiCarousel({ handleCurrentProject }) {
 	return (
 		<div className="carousel">
 			<Carousel
-				arrows={false}
-				responsive={responsive}
-				infinite={true}
-				swipeable={true}
-				draggable={true}
-				keyBoardControl={true}
-				containerClass="container"
-				renderButtonGroupOutside={true}
-				customButtonGroup={<CustomButtonGroupAsArrows />}
+				arrows = {false}
+				responsive = {responsive}
+				infinite = {true}
+				swipeable = {true}
+				draggable = {true}
+				keyBoardControl = {true}
+				containerClass = "container"
+				renderButtonGroupOutside = {true}
+				customButtonGroup = {<CustomButtonGroupAsArrows />}
 			>
 				{projects.map((project, index) => (
 					<ProjectCard
-						handleCurrentProject={handleCurrentProject}
-						key="project.id"
-						project={project}
-						image={images[index]}
+						handleCurrentProject = {handleCurrentProject}
+						key = "project.id"
+						project = {project}
+						image = {images[index]}
 					/>
 				))}
 			</Carousel>

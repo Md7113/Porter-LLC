@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Card_Number = () => {
+const CardNumber = () => {
   return (
     <div>Card_Number</div>
   )
 }
 
-export default Card_Number
+export default CardNumber

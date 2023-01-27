@@ -30,6 +30,8 @@ export default function Project({ currentProject }) {
 				setImage1(e.target.src);
 				setImage4(tempImg);
 				break;
+				default:
+					break;
 		}
 	};
 
