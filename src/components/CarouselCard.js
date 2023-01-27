@@ -3,7 +3,7 @@ import '../css/Carousel.css';
 import arrow from '../images/rightArrow.svg';
 import { useNavigate } from 'react-router-dom';
 
-function Carousel_Card({ project, image, handleCurrentProject }) {
+function CarouselCard({ project, image, handleCurrentProject }) {
 	const navigate = useNavigate();
 	function handleProjectSave(){
 		handleCurrentProject(project)
@@ -29,10 +29,9 @@ function Carousel_Card({ project, image, handleCurrentProject }) {
 					<img className='arrow_link' src={arrow} alt="right arrow" />
 				</div>
 			</div>
-
 			<hr className="Lower_line_break"></hr>
 		</div>
 	);
 }
 
-export default Carousel_Card;
+export default CarouselCard;

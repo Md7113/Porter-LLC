@@ -1,10 +1,10 @@
 import React from 'react';
-import AboutInfo from '../utils/about_us_info';
-import CardContainer from './Cards_Container';
-import TextCard from './Card_Text';
-import TextTitle from './Card_Title_Text';
+import AboutInfo from '../utils/aboutUsInfo';
+import CardContainer from './CardsContainer';
+// import TextCard from './CardText';
+import TextTitle from './CardTitleText';
 
-const About_Info = () => {
+const AboutUsInfo = () => {
     const aboutContent = AboutInfo();
     const row1 = aboutContent[0];
     const row2 = aboutContent[1];
@@ -26,4 +26,4 @@ const About_Info = () => {
     )
 }
 
-export default About_Info;
+export default AboutUsInfo;

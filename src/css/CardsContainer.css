@@ -1,7 +1,6 @@
 .card_row {
     display: flex;
     justify-content: space-evenly;
-    margin: 20px 5%; 
 }
 
 .card_row div {
@@ -14,7 +13,19 @@
     padding-top: 40px;
 }
 
-.card_padding > div{
+.card_padding div{
         padding-right:100px ;    
 }
 
+.font_title h3 {
+	font-size: 65px;
+	padding-bottom: 10px;
+}
+.font_title p {
+	font-size: 24px;
+}
+
+.hr {
+    margin-left: 5%;
+    margin-right: 36%;
+}
