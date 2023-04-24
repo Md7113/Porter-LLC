@@ -12,6 +12,10 @@
 //     relevance: '',
 //     serviceProvided:''
 // }
+import img1 from '../images/shriners.png';
+import img2 from '../images/kaiser_project2.png';
+import img3 from '../images/ucsfParking_project3.png';
+import img4 from '../images/ucDavisCancer_project4.png';
 
 const projectList =() => {
     let projects = [ 
@@ -28,7 +32,9 @@ const projectList =() => {
             generalContractor: ' Messer Construction',
             relevance: ' Healthcare, OSHOD & State Fire Marshall',
             serviceProvided:' Project Management',
-            // img:'../images/shriners.png'
+            img: img1,
+            alt:'',
+
         },
         {
             id: 2,
@@ -42,7 +48,9 @@ const projectList =() => {
             generalContractor: ' McCarthy Building Companies',
             architectRecord: ' NBBJ Architects',
             relevance: ' Healthcare, OSHOD & State Fire Marshall',
-            serviceProvided:' Project Management'
+            serviceProvided:' Project Management',
+            img: img2,
+            alt: ''
         },
         {
             id: 3,
@@ -56,7 +64,9 @@ const projectList =() => {
             architectRecord: ' Rudolph & Sletten',
             generalContractor: ' Healthcare, Higher Education & Parking',
             relevance: 'blank on form',
-            serviceProvided:' Architizer A+ Awards Special Mention, ParkingStructures, 2014; AIA San Francisco Design Citation Award, 2013'
+            serviceProvided:' Architizer A+ Awards Special Mention, ParkingStructures, 2014; AIA San Francisco Design Citation Award, 2013',
+            img: img3,
+            alt: ''
         },
         {
             id: 4,
@@ -70,7 +80,9 @@ const projectList =() => {
             architectRecord: ' SmithGroup',
             generalContractor:' Rudolph & Sletten',
             relevance: ' Healthcare & Higher Education',
-            serviceProvided:' Project Management'
+            serviceProvided:' Project Management',
+            img: img4,
+            alt: ''
         }
     ];
     return  projects

@@ -11,8 +11,7 @@ const HomeContent = () => {
 	const homeContent = homeInfo();
 	const line1 = homeContent[0];
 	const line2 = homeContent[1];
-	const line3 = homeContent[2];
-
+	
 	return (
 		<section className="display_rows">
 			<Fade bottom>
@@ -43,12 +42,6 @@ const HomeContent = () => {
 					content={line2.section2[1]}
 				/>
 			</CardContainer >
-			<hr className='hr'/>
-			<CardContainer className="card_padding">
-				<TextCard className="line_spacing padding_btm" content={line3.section1} />
-				<TextCard className="line_spacing" content={line3.section2} />
-				<TextCard className="line_spacing" content={line3.section3} />
-			</CardContainer>
 			</Fade>
 		</section>
 	);
