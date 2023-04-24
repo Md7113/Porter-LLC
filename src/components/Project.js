@@ -2,38 +2,6 @@ import React, { useState } from 'react';
 import '../css/Project.css';
 
 export default function Project({ currentProject }) {
-	//imgArray
-	const imgArray = [
-		'https://via.placeholder.com/200',
-		'https://via.placeholder.com/200',
-		'https://via.placeholder.com/200',
-		'https://via.placeholder.com/200',
-	];
-	const [image1, setImage1] = useState(imgArray[0]);
-	const [image2, setImage2] = useState(imgArray[1]);
-	const [image3, setImage3] = useState(imgArray[2]);
-	const [image4, setImage4] = useState(imgArray[3]);
-
-	const imgSwap = (e) => {
-		let tempImg = image1;
-		console.log(e.target);
-		switch (e.target.src) {
-			case image2:
-				setImage1(e.target.src);
-				setImage2(tempImg);
-				break;
-			case image3:
-				setImage1(e.target.src);
-				setImage3(tempImg);
-				break;
-			case image4:
-				setImage1(e.target.src);
-				setImage4(tempImg);
-				break;
-				default:
-					break;
-		}
-	};
 
 	return (
 		<section className="project_section">
@@ -82,12 +50,7 @@ export default function Project({ currentProject }) {
 					</p>
 				</div>
 				<div className="project_img_container">
-					<img className="project_main_img" src={image1} alt="Placeholder" />
-					<div className="project_small_img">
-						<img onClick={imgSwap} src={image2} alt="Placeholder2" />
-						<img onClick={imgSwap} src={image3} alt="Placeholder3" />
-						<img onClick={imgSwap} src={image4} alt="Placeholder4" />
-					</div>
+					<img className="project_main_img" src={currentProject.img} alt="Placeholder" />
 				</div>
 			</div>
 		</section>

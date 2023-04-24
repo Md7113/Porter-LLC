@@ -3,13 +3,12 @@ import '../css/Carousel.css';
 import arrow from '../images/rightArrow.svg';
 import { useNavigate } from 'react-router-dom';
 
-function CarouselCard({ project, image, handleCurrentProject }) {
+function CarouselCard({ project, handleCurrentProject }) {
 	const navigate = useNavigate();
 	function handleProjectSave(){
 		handleCurrentProject(project)
-		navigate('/project',  {state: {currentProject: {project}}, image: {image}});
+		navigate('/project',  {state: {currentProject: {project}}});
 	}
-
 	return (
 		<div className="carousel_Project_card">
 			<hr className="head_line_break" />
@@ -22,7 +21,7 @@ function CarouselCard({ project, image, handleCurrentProject }) {
 			<hr className="Lower_line_break"></hr>
 			<div className="project_link" onClick = {handleProjectSave} >
 				<div className="carousel_padding">
-					<img src={image.image} alt= {image.alt}/>
+					<img src={project.img} />
 				</div>
 				<div className="project_link arrow">
 					<span>VIEW PROJECT</span>
