@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/AboutUs.css';
 import About_img from '../images/about-us.png';
-import AboutUsInfo from '../components/AboutUsInfo';
+// import AboutUsInfo from '../components/AboutUsInfo';
 
 const About_Us_Page = () => {
 	return (
@@ -39,10 +39,10 @@ const About_Us_Page = () => {
 					<img style={{objectFit: 'contain'}} src={About_img} alt= ''/>
 				</div>
 			</div>
-			<div className="Our_Team_content">
+			{/* <div className="Our_Team_content">
 				<h1>OUR TEAM/SERVICES</h1>
-			</div>
-			<AboutUsInfo/>
+			</div> */}
+			{/* <AboutUsInfo/> */}
 		</div>
 	);
 };

@@ -44,11 +44,11 @@ const HomeContent = () => {
 				/>
 			</CardContainer >
 			<hr className='hr'/>
-			<CardContainer className="card_padding">
+			{/* <CardContainer className="card_padding">
 				<TextCard className="line_spacing padding_btm" content={line3.section1} />
 				<TextCard className="line_spacing" content={line3.section2} />
 				<TextCard className="line_spacing" content={line3.section3} />
-			</CardContainer>
+			</CardContainer> */}
 			</Fade>
 		</section>
 	);

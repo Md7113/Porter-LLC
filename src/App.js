@@ -5,7 +5,7 @@ import Home from './pages/HomePage';
 import Header from './components/Header';
 import About from './pages/AboutUs';
 import Project from './components/Project';
-
+import Team from './pages/OurTeam';
 function App() {
 	const [currentProject, setCurrentProject] = useState({});
 	const handleCurrentProject = (project) => setCurrentProject(project);
@@ -20,6 +20,7 @@ function App() {
 					element={<Home handleCurrentProject={handleCurrentProject} />}
 				/>
 				<Route path="/about" element={<About />} />
+				<Route path="/our-team" element={<Team />} />
 				{/* <Route path="/projects" element={<Projects />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} /> */}

@@ -1,0 +1,33 @@
+.Our_Team_content{
+    background-color: var(--ebb_white);
+    padding: 5%;
+    padding-top: 3.5%;
+    width: 100%;
+}
+
+.Our_Team_content h1{
+    color: var(--porter_black);
+    font-size: 65px;
+    border-top: 8px solid var(--porter_black);
+    margin-bottom: 20px;
+}
+
+.Team_img{   
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+.Team_Grid{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+}
+
+.Team_Name{
+    font-size: 25px;
+    color: var(--porter_black);
+    font-family: var(--text_font);
+}
