@@ -1,10 +1,10 @@
 import React from 'react';
-import homeInfo from '../utils/homeContent';
-import CardContainer from './CardsContainer';
-import '../css/HomeContent.css';
-import TextLink from './CardTextLink';
-import TextCard from './CardText';
-import TextTitle from './CardTitleText';
+import homeInfo from '../../utils/homeContent';
+import CardContainer from '../CardsContainer';
+import '../../css/home/HomeContent.css';
+import TextLink from '../CardTextLink';
+import TextCard from '../CardText';
+import TextTitle from '../CardTitleText';
 import Fade from 'react-reveal/Fade';
 
 const HomeContent = () => {

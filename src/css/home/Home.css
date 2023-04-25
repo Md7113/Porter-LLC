@@ -3,7 +3,7 @@
 }
 
 .home_page{  
-    background-image: url('../images/Porter_LinkedIn_Cover_Black.png');
+    background-image: url('../../images/Porter_LinkedIn_Cover_Black.png');
     min-height: calc(100vh - 118px );
     background-size:cover;
     background-repeat: no-repeat;

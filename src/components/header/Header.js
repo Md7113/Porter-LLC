@@ -1,8 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import Navbar from './Navbar';
-import logo from '../images/logo_porter_black.svg';
-import '../css/Header.css'
+import logo from '../../images/logo_porter_black.svg';
+import '../../css/header/Header.css'
 
 function Header() {
     return(

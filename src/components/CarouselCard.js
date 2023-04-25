@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/Carousel.css';
+import '../css/components/Carousel.css';
 import arrow from '../images/rightArrow.svg';
 import { useNavigate } from 'react-router-dom';
 

@@ -46,7 +46,6 @@ export default function MultiCarousel({ handleCurrentProject }) {
 						handleCurrentProject = {handleCurrentProject}
 						key = "project.id"
 						project = {project}
-						// image = {images[index]}
 					/>
 				))}
 			</Carousel>

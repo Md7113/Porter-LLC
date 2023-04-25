@@ -1,7 +1,7 @@
 import React from 'react';
-import AboutInfo from '../utils/aboutUsInfo';
-import CardContainer from './CardsContainer';
-import TextTitle from './CardTitleText';
+import AboutInfo from '../../utils/aboutUsInfo';
+import CardContainer from '../CardsContainer';
+import TextTitle from '../CardTitleText';
 
 const AboutUsInfo = () => {
     const aboutContent = AboutInfo();

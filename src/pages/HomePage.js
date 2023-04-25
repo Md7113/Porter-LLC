@@ -1,8 +1,8 @@
 import React from 'react';
-import '../css/Home.css';
+import '../css/home/Home.css';
 import Carousel from '../components/Carousel';
-import '../css/Carousel.css';
-import HomeHero from '../components/HomeHero';
+import '../css/components/Carousel.css';
+import HomeHero from '../components/home/HomeHero';
 
 const HomePage = ({handleCurrentProject}) => {
 	return (

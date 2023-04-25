@@ -1,7 +1,7 @@
 import React from 'react';
-import '../css/AboutUs.css';
+import '../css/pages/AboutUs.css';
 import About_img from '../images/about-us.png';
-import AboutUsInfo from '../components/AboutUsInfo';
+import AboutUsInfo from '../components/about/AboutUsInfo';
 
 const About_Us_Page = () => {
 	return (

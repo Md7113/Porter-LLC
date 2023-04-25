@@ -1,6 +1,7 @@
 .intro_title {
     font-family: var(--title_font);
     margin: 85px 5% 30px;
+    padding-top:30px;
     font-size: 80px;
     border-top: 8px solid black;
 }
