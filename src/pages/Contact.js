@@ -1,13 +1,15 @@
 import React, { useState, useRef } from 'react';
 import { checkPhoneNumber, validateEmail } from '../utils/helpers';
-import contactImg from '../assets/contact-img-sq.jpg';
-import '../styles/Contact.css';
+import contactImg from '../images/shaking-hands-sm.jpg';
+import '../css/Contact.css';
 import sWal from 'sweetalert';
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
 	const [email, setEmail] = useState('');
-	const [userName, setUserName] = useState('');
+	const [company, setCompany] = useState('');
+	const [firstName, setFirstName] = useState('');
+	const [lastName, setLastName] = useState('');
 	const [project, setProject] = useState('');
 	const [phoneNumber, setPhoneNumber] = useState('');
 	const [errorMessage, setErrorMessage] = useState('');
@@ -22,7 +24,13 @@ export default function Contact() {
 			} else {
 				setErrorMessage('');
 			}
-		} else if (inputType === 'userName') {
+		} if (inputType === 'company') {
+			if (!inputValue) {
+				setErrorMessage('Company name required');
+			} else {
+				setErrorMessage('');
+			}
+		}else if (inputType === 'firstName' || inputType === 'lastName') {
 			if (!inputValue) {
 				setErrorMessage('Name required');
 			} else {
@@ -52,8 +60,10 @@ export default function Contact() {
 
 		if (inputType === 'email') {
 			setEmail(inputValue);
-		} else if (inputType === 'userName') {
-			setUserName(inputValue);
+		} else if (inputType === 'firstName') {
+			setFirstName(inputValue);
+		}else if (inputType === 'lastName') {
+			setLastName(inputValue);
 		} else if (inputType === 'phoneNumber') {
 			setPhoneNumber(inputValue);
 		} else {
@@ -75,11 +85,11 @@ export default function Contact() {
 		}
 		if (!project) {
 			setErrorMessage(
-				`Please enter a brief message and the best time to reach you.`
+				`Please give a brief description of the project, questions, or request and the best time to contact you.`
 			);
 			return;
 		}
-		if (!userName) {
+		if (!firstName) {
 			setErrorMessage(`Please enter your name.`);
 			return;
 		}
@@ -105,49 +115,58 @@ export default function Contact() {
 				}
 			);
 
-		setUserName('');
+		setFirstName('');
+		setLastName('');
 		setProject('');
 		setPhoneNumber('');
 		setEmail('');
+		setCompany('');
 	};
 
 	return (
 		<section className="contactMe">
+			<h2>Contact</h2>
 			<form className="contact_box" ref={form}>
-				<h2>Contact Me</h2>
-				<div className="input_group">
-					<label className="label">
-						Name
 						<input
-							value={userName}
-							name="userName"
+							value={firstName}
+							name="firstName"
 							onChange={handleInputChange}
 							type="text"
-							placeholder="Full Name"
+							placeholder="First Name"
 							className="input"
 							onKeyUp={handleKeyUp}
 							onClick={handleKeyUp}
 						/>
-					</label>
-				</div>
-				<div className="input_group">
-					<label className="label">
-						Phone Number
+						<input
+							value={lastName}
+							name="lastName"
+							onChange={handleInputChange}
+							type="text"
+							placeholder="Last Name"
+							className="input"
+							onKeyUp={handleKeyUp}
+							onClick={handleKeyUp}
+						/>
 						<input
 							value={phoneNumber}
 							name="phoneNumber"
 							type="text"
 							onChange={handleInputChange}
 							className="input"
-							placeholder="xxx-xxx-xxxx"
+							placeholder="Phone Number"
 							onKeyUp={handleKeyUp}
 							onClick={handleKeyUp}
 						/>
-					</label>
-				</div>
-				<div className="input_group">
-					<label className="label">
-						Email
+						<input
+							value={company}
+							name="company"
+							type="text"
+							onChange={handleInputChange}
+							className="input"
+							placeholder="Company"
+							onKeyUp={handleKeyUp}
+							onClick={handleKeyUp}
+						/>
 						<input
 							value={email}
 							name="email"
@@ -158,11 +177,6 @@ export default function Contact() {
 							onKeyUp={handleKeyUp}
 							onClick={handleKeyUp}
 						/>
-					</label>
-				</div>
-				<div className="input_group">
-					<label className="label">
-						Message
 						<textarea
 							name="project"
 							value={project}
@@ -172,8 +186,6 @@ export default function Contact() {
 							onKeyUp={handleKeyUp}
 							onClick={handleKeyUp}
 						></textarea>
-					</label>
-				</div>
 				{errorMessage && (
 					<div>
 						<p className="error-text">{errorMessage}</p>
@@ -182,14 +194,17 @@ export default function Contact() {
 				<button type="button" onClick={handleContactSubmit}>
 					Submit
 				</button>
-				<div className="aTag">
-					Reach me by email at{' '}
-					<a className="aTag" href="mailto:kvance1010@protonmail.com">
-						kvance1010@protonmail.com
+			</form>
+			<img src={contactImg} alt="" />
+			<div className="aTag">
+				<span> Sacrament | Phone:530.354.4450 </span>
+				<span> Southern California | Phone: 949.514.5978 </span>
+				<span> Bay Area | Phone: 360.927.8881 </span>
+					
+					<a className="aTag" href="mailto:info@porterllc.com">
+						Email: info@porterllc.com
 					</a>
 				</div>
-			</form>
-			<img src={contactImg} alt="a black and white image of a laptop" />
 		</section>
 	);
 }

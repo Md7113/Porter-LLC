@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/HomePage';
 import Header from './components/Header';
 import About from './pages/AboutUs';
+import Contact from './pages/Contact';
 import Project from './components/Project';
 
 function App() {
@@ -20,9 +21,9 @@ function App() {
 					element={<Home handleCurrentProject={handleCurrentProject} />}
 				/>
 				<Route path="/about" element={<About />} />
-				{/* <Route path="/projects" element={<Projects />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} /> */}
+				{/* <Route path="/projects" element={<Projects />} /> */}
+        {/* <Route path="/services" element={<Services />} /> */}
+        <Route path="/contact" element={<Contact />} />
 				<Route
 					path="/project"
 					element={<Project currentProject={currentProject} />}
