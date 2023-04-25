@@ -2,10 +2,10 @@ import './css/App.css';
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/HomePage';
-import Header from './components/Header';
+import Header from './components/header/Header';
 import About from './pages/AboutUs';
 import Contact from './pages/Contact';
-import Project from './components/Project';
+import Project from './components/project/Project';
 
 function App() {
 	const [currentProject, setCurrentProject] = useState({});

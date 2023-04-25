@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../css/Project.css';
+import '../../css/pages/Project.css';
 
 export default function Project({ currentProject }) {
 
