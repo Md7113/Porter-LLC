@@ -8,6 +8,7 @@ import emailjs from '@emailjs/browser';
 export default function Contact() {
 	const [email, setEmail] = useState('');
 	const [company, setCompany] = useState('');
+	const [subject, setSubject] = useState('');
 	const [firstName, setFirstName] = useState('');
 	const [lastName, setLastName] = useState('');
 	const [project, setProject] = useState('');
@@ -121,12 +122,15 @@ export default function Contact() {
 		setPhoneNumber('');
 		setEmail('');
 		setCompany('');
+		setSubject('');
 	};
 
 	return (
 		<section className="contactMe">
 			<h2>Contact</h2>
-			<form className="contact_box" ref={form}>
+			<div className='contactMeContainer'>
+			<form className="contactBox" ref={form}>
+				<div>
 						<input
 							value={firstName}
 							name="firstName"
@@ -147,6 +151,8 @@ export default function Contact() {
 							onKeyUp={handleKeyUp}
 							onClick={handleKeyUp}
 						/>
+						</div>
+						<div>
 						<input
 							value={phoneNumber}
 							name="phoneNumber"
@@ -154,16 +160,6 @@ export default function Contact() {
 							onChange={handleInputChange}
 							className="input"
 							placeholder="Phone Number"
-							onKeyUp={handleKeyUp}
-							onClick={handleKeyUp}
-						/>
-						<input
-							value={company}
-							name="company"
-							type="text"
-							onChange={handleInputChange}
-							className="input"
-							placeholder="Company"
 							onKeyUp={handleKeyUp}
 							onClick={handleKeyUp}
 						/>
@@ -177,6 +173,30 @@ export default function Contact() {
 							onKeyUp={handleKeyUp}
 							onClick={handleKeyUp}
 						/>
+						
+						</div>
+						<div>
+						<input
+							value={company}
+							name="company"
+							type="text"
+							onChange={handleInputChange}
+							className="input"
+							placeholder="Company Name"
+							onKeyUp={handleKeyUp}
+							onClick={handleKeyUp}
+						/>
+						<input
+							value={subject}
+							name="subject"
+							type="text"
+							onChange={handleInputChange}
+							className="input"
+							placeholder="Subject"
+							onKeyUp={handleKeyUp}
+							onClick={handleKeyUp}
+						/>
+						</div>
 						<textarea
 							name="project"
 							value={project}
@@ -195,15 +215,18 @@ export default function Contact() {
 					Submit
 				</button>
 			</form>
+			<div className='imgContactInfoContainer'>
 			<img src={contactImg} alt="" />
-			<div className="aTag">
-				<span> Sacrament | Phone:530.354.4450 </span>
-				<span> Southern California | Phone: 949.514.5978 </span>
-				<span> Bay Area | Phone: 360.927.8881 </span>
+			<div className="">
+				<div> Sacrament | Phone:530.354.4450 </div>
+				<div> Southern California | Phone: 949.514.5978 </div>
+				<div> Bay Area | Phone: 360.927.8881 </div>
 					
-					<a className="aTag" href="mailto:info@porterllc.com">
+					<a className="" href="mailto:info@porterllc.com">
 						Email: info@porterllc.com
 					</a>
+				</div>
+				</div>
 				</div>
 		</section>
 	);

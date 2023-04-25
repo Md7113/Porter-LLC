@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../../css/pages/Project.css';
 
 export default function Project({ currentProject }) {
@@ -13,40 +13,19 @@ export default function Project({ currentProject }) {
 							{currentProject.businessName}
 						</h2>
 						<hr />
-						<p className="project_details">{currentProject.location}</p>
+						
 						<p className="project_details project_description_section ">
 							{currentProject.description}
 						</p>
 					</div>
 					<p>
+						
+					<p className="project_details">{currentProject.location}</p>
 						<div className="project_details">
-							<span>SQUARE FEET: </span>
+							<span>Size: </span>
 							{currentProject.size}
 						</div>
-						<div className="project_details">
-							<span>OWNER'S BUDGE: </span>
-							{currentProject.budget}
-						</div>
-						<div className="project_details">
-							<span>OWNER: </span>
-							{currentProject.owner}
-						</div>
-						<div className="project_details">
-							<span>ARCHITECT OF RECORD: </span>
-							{currentProject.architectRecord}
-						</div>
-						<div className="project_details">
-							<span>GENERAL CONTRACTOR: </span>
-							{currentProject.generalContractor}
-						</div>
-						<div className="project_details">
-							<span>RELEVANCE: </span>
-							{currentProject.relevance}
-						</div>
-						<div className="project_details">
-							<span>SERVICES PROVIDED: </span>
-							{currentProject.serviceProvided}
-						</div>
+					
 					</p>
 				</div>
 				<div className="project_img_container">
