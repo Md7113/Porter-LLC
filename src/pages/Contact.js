@@ -11,7 +11,7 @@ export default function Contact() {
 	const [subject, setSubject] = useState('');
 	const [firstName, setFirstName] = useState('');
 	const [lastName, setLastName] = useState('');
-	const [message, setmessage] = useState('');
+	const [message, setMessage] = useState('');
 	const [phoneNumber, setPhoneNumber] = useState('');
 	const [errorMessage, setErrorMessage] = useState('');
 	const form = useRef();
@@ -19,40 +19,63 @@ export default function Contact() {
 	const handleKeyUp = (e) => {
 		const inputType = e.target.name;
 		const inputValue = e.target.value;
-		if (inputType === 'email') {
-			if (!inputValue) {
-				setErrorMessage('Email required');
-			} else {
-				setErrorMessage('');
-			}
+		switch (inputType){
+			case 'email': setErrorMessage('Email required');
+			break;
+			case'company': setErrorMessage('Company name required');
+			break;
+			case 'firstName':;
+			case'lastName': setErrorMessage('Company name required');
+			break;
+			case 'phoneNumber': setErrorMessage('Phone number required');
+			break;
+			case'subject': setErrorMessage('Subject required');
+			break;
+			case'message': setErrorMessage('Please enter a brief message and the best time to reach you.');
+			break;
+			default: setErrorMessage('');
+			break;
 		}
-		if (inputType === 'company') {
-			if (!inputValue) {
-				setErrorMessage('Company name required');
-			} else {
-				setErrorMessage('');
-			}
-		} else if (inputType === 'firstName' || inputType === 'lastName') {
-			if (!inputValue) {
-				setErrorMessage('Name required');
-			} else {
-				setErrorMessage('');
-			}
-		} else if (inputType === 'phoneNumber') {
-			if (!inputValue) {
-				setErrorMessage('Phone number required');
-			} else {
-				setErrorMessage('');
-			}
-		} else if (inputType === 'message') {
-			if (!inputValue) {
-				setErrorMessage(
-					'Please enter a brief message and the best time to reach you.'
-				);
-			} else {
-				setErrorMessage('');
-			}
-		}
+		// if (inputType === 'email') {
+		// 	if (!inputValue) {
+		// 		setErrorMessage('Email required');
+		// 	} else {
+		// 		setErrorMessage('');
+		// 	}
+		// }
+		// if (inputType === 'company') {
+		// 	if (!inputValue) {
+		// 		setErrorMessage('Company name required');
+		// 	} else {
+		// 		setErrorMessage('');
+		// 	}
+		// } else if (inputType === 'firstName' || inputType === 'lastName') {
+		// 	if (!inputValue) {
+		// 		setErrorMessage('Name required');
+		// 	} else {
+		// 		setErrorMessage('');
+		// 	}
+		// } else if (inputType === 'phoneNumber') {
+		// 	if (!inputValue) {
+		// 		setErrorMessage('Phone number required');
+		// 	} else {
+		// 		setErrorMessage('');
+		// 	}
+		// } else if (inputType === 'subject') {
+		// 	if (!inputValue) {
+		// 		setErrorMessage('Phone number required');
+		// 	} else {
+		// 		setErrorMessage('');
+		// 	}
+		// }else if (inputType === 'message') {
+		// 	if (!inputValue) {
+		// 		setErrorMessage(
+		// 			'Please enter a brief message and the best time to reach you.'
+		// 		);
+		// 	} else {
+		// 		setErrorMessage('');
+		// 	}
+		// }
 	};
 
 	const handleInputChange = (e) => {
@@ -68,8 +91,14 @@ export default function Contact() {
 			setLastName(inputValue);
 		} else if (inputType === 'phoneNumber') {
 			setPhoneNumber(inputValue);
+		}else if (inputType === 'email') {
+			setEmail(inputValue);
+		}else if (inputType === 'company') {
+			setCompany(inputValue);
+		}else if (inputType === 'subject') {
+			setSubject(inputValue);
 		} else {
-			setmessage(inputValue);
+			setMessage(inputValue);
 		}
 	};
 
@@ -131,7 +160,7 @@ export default function Contact() {
 
 		setFirstName('');
 		setLastName('');
-		setmessage('');
+		setMessage('');
 		setPhoneNumber('');
 		setEmail('');
 		setCompany('');
@@ -217,9 +246,9 @@ export default function Contact() {
 						placeholder="Please give a brief description of the project, questions, or request and the best time to contact you."
 						onKeyUp={handleKeyUp}
 						onClick={handleKeyUp}
-					></textarea>
+					/>
 					{errorMessage && (
-						<div>
+						<div className='contactErrorMessage'>
 							<p className="error-text">{errorMessage}</p>
 						</div>
 					)}
@@ -234,7 +263,7 @@ export default function Contact() {
 						<div> <span>Southern California</span> | Phone: 949.514.5978 </div>
 						<div> <span>Bay Area</span> | Phone: 360.927.8881 </div>
 						<div>
-							<a className="" href="mailto:info@porterllc.com">
+							<a className="aTag" href="mailto:info@porterllc.com">
 								<span>Email:</span> info@porterllc.com
 							</a>
 						</div>
