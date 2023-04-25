@@ -3,6 +3,14 @@ import img2 from '../images/kaiser_project2.png';
 import img3 from '../images/ucsfParking_project3.png';
 import img4 from '../images/ucDavisCancer_project4.png';
 
+/*
+Projects:
+1. SHRINERS HOSPITALS FOR CHILDREN
+2. KAISER OAKLAND REPLACEMENTHOSPITAL PHASE II
+3. UCSF MEDICAL CENTER PARKINGSTRUCTURE
+4. UC DAVIS MEDICAL CENTERCANCER CENTER EXPANSION
+*/
+
 const projectList =() => {
     let projects = [ 
         {
