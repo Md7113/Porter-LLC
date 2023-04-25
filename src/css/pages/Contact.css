@@ -1,0 +1,74 @@
+.contactMe {
+	padding: 60px;
+}
+.contactMe h2 {
+	color: var(--porter_black);
+	font-size: 65px;
+	border-top: 8px solid var(--porter_black);
+	margin-bottom: 20px;
+	padding-top: 20px;
+}
+.contactMeContainer {
+	display: flex;
+}
+.contactBox {
+	border-top: 3px solid var(--porter_black);
+	width: 60%;
+	margin-right: 40px;
+	padding-top: 40px;
+}
+.contactBox div {
+	display: flex;
+	justify-content: center;
+}
+.input {
+	padding: 20px;
+	margin: 20px;
+	width: 40%;
+}
+.input:focus {
+	outline: 2px solid var(--red_orange);
+}
+.inputTextArea {
+	width: 84%;
+	margin: 20px 75px;
+	height: 100px;
+	padding: 20px;
+}
+.inputTextArea:focus {
+	outline: 2px solid var(--red_orange);
+}
+
+.contactBox button {
+	display: block;
+	padding: 10px 40px;
+	margin: 0 auto;
+	background-color: var(--porter_black);
+	color: var(--red_orange);
+	border-radius: 5px;
+}
+.contactBox button:hover {
+	background-color: var(--red_orange);
+	color: var(--porter_black);
+}
+
+.imgContactInfoContainer img {
+	margin-top: 20px;
+	max-height: 450px;
+}
+.businessInfoContact div {
+	margin-top: 10px;
+	font-size: 18px;
+}
+.businessInfoContact span {
+	font-weight: 900;
+	color: var(--porter_black);
+}
+.contactErrorMessage {
+	margin: 20px;
+	font-size: 20px;
+	color: var(--red_orange);
+}
+.aTag {
+	color: var(--red_orange);
+}

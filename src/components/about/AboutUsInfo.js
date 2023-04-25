@@ -1,14 +1,12 @@
 import React from 'react';
-import AboutInfo from '../utils/aboutUsInfo';
-import CardContainer from './CardsContainer';
-// import TextCard from './CardText';
-import TextTitle from './CardTitleText';
+import AboutInfo from '../../utils/aboutUsInfo';
+import CardContainer from '../CardsContainer';
+import TextTitle from '../CardTitleText';
 
 const AboutUsInfo = () => {
     const aboutContent = AboutInfo();
     const row1 = aboutContent[0];
     const row2 = aboutContent[1];
-    // const row3 = aboutContent[2];
 
     return (
         <section>

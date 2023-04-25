@@ -1,11 +1,12 @@
-import './css/App.css';
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/HomePage';
-import Header from './components/Header';
+import Header from './components/header/Header';
 import About from './pages/AboutUs';
-import Project from './components/Project';
+import Project from './components/project/Project';
 import Team from './pages/OurTeam';
+import Contact from './pages/Contact';
+
 function App() {
 	const [currentProject, setCurrentProject] = useState({});
 	const handleCurrentProject = (project) => setCurrentProject(project);
@@ -20,10 +21,10 @@ function App() {
 					element={<Home handleCurrentProject={handleCurrentProject} />}
 				/>
 				<Route path="/about" element={<About />} />
-				<Route path="/our-team" element={<Team />} />
+				<Route path="/team" element={<Team />} />
 				{/* <Route path="/projects" element={<Projects />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/services" element={<Services />} />*/
+        <Route path="/contact" element={<Contact />} /> }
 				<Route
 					path="/project"
 					element={<Project currentProject={currentProject} />}

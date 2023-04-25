@@ -1,8 +1,8 @@
 import React from 'react'
-import '../css/CardTitleText.css';
+import '../css/components/CardTitleText.css';
 
 const CardTitleText = (props) => {
-    let classes = '' + props.className;
+    let classes = ' ' + props.className;
     return (
       <div className= {classes}>
         <h3>{props.title}</h3>

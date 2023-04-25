@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/CardsContainer.css';
+import '../css/components/CardsContainer.css';
 
 const CardsContainer = (props) => {
     let classes = 'card_row ' + props.className;
