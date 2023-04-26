@@ -3,6 +3,7 @@
     padding: 5%;
     padding-top: 3.5%;
     width: 100%;
+    height: calc(100vh - 115px);
 }
 
 .About_Us_content h1{
