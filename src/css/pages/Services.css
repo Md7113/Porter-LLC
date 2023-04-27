@@ -5,12 +5,15 @@
 .servicesContainer hr{
 	width: 65%;
     color: var(--red_orange);
+    /* color: white; */
 }
 
 .servicesContainer h2 {
 	color: var(--red_orange);
+    /* color: white; */
 	font-size: 65px;
 	border-top: 8px solid var(--red_orange);
+	/* border-top: 8px solid white; */
 	margin-bottom: 20px;
 	padding-top: 20px;
 }

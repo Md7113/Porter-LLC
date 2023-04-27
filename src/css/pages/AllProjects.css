@@ -40,6 +40,8 @@
     color: black;
     font-size: 28px;
     margin: 20px;
+    line-height: 35px;
+    font-weight: 600;
 }
 .projectImg{
     width: 100%;

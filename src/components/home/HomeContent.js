@@ -38,8 +38,8 @@ const HomeContent = () => {
 				/>
 				<TextLink
 					className="line_spacing contrast_card"
-					title={line2.section2[0]}
-					content={line2.section2[1]}
+					title={line2.section3[0]}
+					content={line2.section3[1]}
 				/>
 			</CardContainer >
 			</Fade>

@@ -18,6 +18,8 @@ export default function MultiCarousel({ handleCurrentProject }) {
 			items: 1,
 		},
 	};
+	
+	projects = projects.filter(project => project.carousel);
 
 	const CustomButtonGroupAsArrows = ({ next, previous }) => {
 		return (

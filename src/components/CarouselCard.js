@@ -9,7 +9,7 @@ function CarouselCard({ project, handleCurrentProject }) {
 		handleCurrentProject(project);
 		navigate('/project', { state: { currentProject: { project } } });
 	}
-	const pattern =/(^(?:\S+\s+\n?){1,20})/;
+	const pattern =/(^(?:\S+\s+\n?){1,10})/;
 	return (
 		<div className="carousel_Project_card">
 			<hr className="head_line_break" />

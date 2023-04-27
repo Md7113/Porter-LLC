@@ -13,8 +13,7 @@ const Services = () => {
 				{services.map((service) => (
 					<div
 						className="serviceCard"
-						key={' '}
-						
+						key={service.id}
 					>
 						<h3 className="serviceTitle">{service.service}</h3>
 						<p className="serviceDescription">{service.description}</p>
