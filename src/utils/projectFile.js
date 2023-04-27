@@ -43,7 +43,7 @@ const projectList =() => {
         },
         {
             id: 3,
-            businessName: 'MASONIC HOMES OF CALIFORNIA - THE PAVILLION AT ACACIA CREEK ASSISTED LIVING AND MEMORY CARE',
+            businessName: 'MASONIC HOMES OF CALIFORNIA ',
             location: 'UNION CITY, CA',
             description: 'New construction, including two floors of wood-framed construction over concrete podium with a 13,000 (sf) garage underneath. The 2nd floor (11,800 sf) is designed as a 12-apartment assisted living facility with each resident and the 1st floor (12,500 sf) is designed as a 12-apartment memory care facility. Nestled in the hills of Union City overlooking the San Francisco Bay, the Pavilion is a residence for seniors experiencing memory loss conditions or requiring assistance with day-to-day activities. Surrounded by lush greenery and bay views, the Pavilion’s well-appointed apartments circle a dynamic gathering space.',
             size: '37,300',

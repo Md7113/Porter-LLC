@@ -1,13 +1,32 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const CardTitleText = (props) => {
-  let classes = 'text_link_format ' + props.className;
+	let classes = 'text_link_format ' + props.className;
+	const navigate = useNavigate();
+
+	const handleLink = (e) => {
+		switch (e.target.textContent) {
+			case 'VIEW ALL PROJECTS':
+				navigate('/projects');
+				break;
+			case 'VIEW OUR TEAM':
+				navigate('/team');
+				break;
+			case 'VIEW ALL SERVICES':
+				navigate('/services');
+				break;
+			default:
+				break;
+		}
+	};
+
 	return (
-		<div className= {classes}>
+		<div className={classes}>
 			<h3>{props.title}</h3>
 			<p>{props.content}</p>
-			<Link to="/projects">VIEW ALL PROJECTS</Link>
+			<span onClick={handleLink}>{props.linkContent}</span>
 		</div>
 	);
 };

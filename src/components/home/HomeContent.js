@@ -25,21 +25,24 @@ const HomeContent = () => {
 					content={line1.section3[1]}/>
 			</CardContainer>
 			<hr className='hr'/>
-			<CardContainer className="card_padding">
+			<CardContainer className="card_padding card_height">
 				<TextLink
 					className="line_spacing"
 					title={line2.section1[0]}
 					content={line2.section1[1]}
+					linkContent={line2.section1[2]}
 				/>
 				<TextLink
 					className="line_spacing"
 					title={line2.section2[0]}
 					content={line2.section2[1]}
+					linkContent={line2.section2[2]}
 				/>
 				<TextLink
 					className="line_spacing contrast_card"
 					title={line2.section3[0]}
 					content={line2.section3[1]}
+					linkContent={line2.section3[2]}
 				/>
 			</CardContainer >
 			</Fade>

@@ -49,7 +49,7 @@ export default function MultiCarousel({ handleCurrentProject }) {
 				swipeable={true}
 				draggable={true}
 				autoPlay={true}
-				autoPlaySpeed={3000}
+				autoPlaySpeed={7000}
 				keyBoardControl={true}
 				containerClass="container"
 				renderButtonGroupOutside={true}

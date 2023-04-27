@@ -1,23 +1,41 @@
 .contrast_card {
     background-color: var(--red_orange);
-    padding: 20px 20px 260px;
+    padding: 20px 20px;
     margin: -20px 0 -20px -20px;
     color:var(--ebb_white);
-    
+    font-weight:600;
 }
-.text_link_format h3{
+
+.text_link_format {
+    display:flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    align-content: center;
+}
+ h3{
     font-weight: 900;
     font-size: 25px;
     padding-bottom: 30px;
 }
 .text_link_format p{
     padding-bottom: 40px;
+    height: 265px;
 }
 
-.text_link_format a{
+.text_link_format span{
     font-weight: 700;
     color: var(--red_orange);
 }
-.contrast_card > a{
-    color: var(--porter_black);  
+.text_link_format span:hover{
+    color: var(--porter_black);
+}
+.contrast_card > span{
+    color: var(--porter_black);
+    font-size: 17px;
+}
+.contrast_card > span:hover{
+    color: var(--ebb_white);
+}
+.contrast_card p{
+    height: 235px;
 }
