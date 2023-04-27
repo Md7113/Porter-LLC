@@ -2,19 +2,14 @@ const homeInfo = () => {
     let homeInformation = [
         {
             section1: ['We strive for excellence in everything we do and our unmatched decades of experience are brought to bear on every program we manage. Let\’s build a world on purpose.'],
-            section2: ['56', 'Years of Experience'],
+            section2: ['2006', 'Established'],
             section3: ['300+', 'Projects Completed']
         },
         {
-            section1: ['FROM VISION TO REALITY', 'It\'s always good to bring a slower friend with you on a hike. If you happen to come across bears, the whole group doesn\'t have to worry. Only the slowest in the group do. That was the lesson they were about to learn that day.'],
-            section2: ['GO BEYOND THE BUILD', 'Dave watched as the forest burned up on the hill, only a few miles from her house. The car had been hastily packed and marta was inside trying to round up the last of the pets. Dave went through his mental list of the most important papers'],
-            section3: ['THE RIGHT SKILLS FOR THE JOB', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis veniam cupiditate est esse voluptatum nemo magnam quasi ullam ex, provident ratione, doloribus fugit unde impedit, officia voluptates. Aliquam quia quisquam nisi quae porro dignissimos tenetur dolores, illum in repellat? Qui doloribus ad repudiandae ratione tempore?']
-        },
-        // {
-        //     section1: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae consectetur facere sequi quia tenetur ad id cum laborum voluptatibus placeat odio, culpa eveniet amet iste illum animi consequuntur a fuga soluta vel, aperiam qui. Recusandae illum quae, quia odit vero voluptatum quasi ea mollitia quod, laudantium ab nihil, numquam pariatur dicta vitae non veniam similique excepturi minus praesentium expedita aperiam atque dolore quos? Impedit illum animi iste totam cum! Doloribus dolorum facilis accusantium veritatis hic neque magni rerum quas at placeat modi eum amet quis iure, distinctio eaque praesentium asperiores. Aut esse autem minus enim et accusantium vel soluta magni!',
-        //     section2: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae consectetur facere sequi quia tenetur ad id cum laborum voluptatibus placeat odio, culpa eveniet amet iste illum animi consequuntur a fuga soluta vel, aperiam qui. Recusandae illum quae, quia odit vero voluptatum quasi ea mollitia quod, laudantium ab nihil, numquam pariatur dicta vitae non veniam similique excepturi minus praesentium expedita aperiam atque dolore quos? Impedit illum animi iste totam cum! Doloribus dolorum facilis accusantium veritatis hic neque magni rerum quas at placeat modi eum amet quis iure, distinctio eaque praesentium asperiores. Aut esse autem minus enim et accusantium vel soluta magni!',
-        //     section3: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae consectetur facere sequi quia tenetur ad id cum laborum voluptatibus placeat odio, culpa eveniet amet iste illum animi consequuntur a fuga soluta vel, aperiam qui. Recusandae illum quae, quia odit vero voluptatum quasi ea mollitia quod, laudantium ab nihil, numquam pariatur dicta vitae non veniam similique excepturi minus praesentium expedita aperiam atque dolore quos? Impedit illum animi iste totam cum! Doloribus dolorum facilis accusantium veritatis hic neque magni rerum quas at placeat modi eum amet quis iure, distinctio eaque praesentium asperiores. Aut esse autem minus enim et accusantium vel soluta magni!'
-        // },
+            section1: ['FROM VISION TO REALITY', 'Porter is a team of some of the most adept construction and program managers in the industry. We came together in 2006 under a common vision—to see a future of stronger communities and a world built on purpose. Our wealth of expertise is with you every step of the way—from planning and evaluation, to design and engineering, to construction and beyond. From vision to reality, we provide seamless integration solutions for complex programs at any scale.'],
+            section2: ['GO BEYOND THE BUILD', 'Our mission is to enrich lives through the relationships we forge and the legacy we build together. We see our partners as members of our team—growing through the challenges we face and the victories we achieve. We have the experience to adapt, the vision to see change on the horizon, and the courage to make the right decisions at the right time.'],
+            section3: ['THE RIGHT SKILLS FOR THE JOB', 'Our unmatched decades of experience are brought to bear on every program we manage. Whatever stage you\'re in, Porter can deliver exceptional results. Partner with us today.']
+        }
     ];
     return homeInformation;
 };

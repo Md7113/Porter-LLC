@@ -1,0 +1,46 @@
+.servicesContainer {
+	padding: 60px;
+    background-color: var(--porter_black);
+}
+.servicesContainer hr{
+	width: 65%;
+    color: var(--red_orange);
+}
+
+.servicesContainer h2 {
+	color: var(--red_orange);
+	font-size: 65px;
+	border-top: 8px solid var(--red_orange);
+	margin-bottom: 20px;
+	padding-top: 20px;
+}
+.allServices {
+	display: flex;
+	justify-content: center;
+    flex-flow: row wrap;
+	background-color: var(--porter_black);
+    padding: 40px 60px;
+    gap:40px;
+    align-content: space-around;
+}
+
+.serviceCard {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    padding: 20px ;
+    min-width: 300px;
+    max-width:520px;
+}
+.serviceTitle {
+    color: white;
+    font-size: 32px;
+    margin: 20px;
+    font-weight: 700;
+}
+.serviceDescription{
+    color: white;
+    line-height: 30px;
+    font-size: 20px;
+}
