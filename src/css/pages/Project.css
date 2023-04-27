@@ -40,6 +40,7 @@
 .project_main_img {
 	width: 50vw;
 	margin: 4.2%;
+	object-fit: contain;
 }
 .project_small_img {
 	display: flex;

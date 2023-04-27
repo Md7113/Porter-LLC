@@ -18,14 +18,24 @@ export default function MultiCarousel({ handleCurrentProject }) {
 			items: 1,
 		},
 	};
-	
-	projects = projects.filter(project => project.carousel);
+
+	projects = projects.filter((project) => project.carousel);
 
 	const CustomButtonGroupAsArrows = ({ next, previous }) => {
 		return (
 			<div className="carousel_arrows">
-				<img className="arrows" onClick={previous} src={leftArrow} alt= "left arrow" />
-				<img className="arrows" onClick={next} src={rightArrow} alt= "right arrow" />
+				<img
+					className="arrows"
+					onClick={previous}
+					src={leftArrow}
+					alt="left arrow"
+				/>
+				<img
+					className="arrows"
+					onClick={next}
+					src={rightArrow}
+					alt="right arrow"
+				/>
 			</div>
 		);
 	};
@@ -33,21 +43,23 @@ export default function MultiCarousel({ handleCurrentProject }) {
 	return (
 		<div className="carousel">
 			<Carousel
-				arrows = {false}
-				responsive = {responsive}
-				infinite = {true}
-				swipeable = {true}
-				draggable = {true}
-				keyBoardControl = {true}
-				containerClass = "container"
-				renderButtonGroupOutside = {true}
-				customButtonGroup = {<CustomButtonGroupAsArrows />}
+				arrows={false}
+				responsive={responsive}
+				infinite={true}
+				swipeable={true}
+				draggable={true}
+				autoPlay={true}
+				autoPlaySpeed={3000}
+				keyBoardControl={true}
+				containerClass="container"
+				renderButtonGroupOutside={true}
+				customButtonGroup={<CustomButtonGroupAsArrows />}
 			>
 				{projects.map((project, index) => (
 					<ProjectCard
-						handleCurrentProject = {handleCurrentProject}
-						key = "project.id"
-						project = {project}
+						handleCurrentProject={handleCurrentProject}
+						key="project.id"
+						project={project}
 					/>
 				))}
 			</Carousel>
