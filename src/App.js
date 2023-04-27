@@ -7,6 +7,7 @@ import Project from './components/project/Project';
 import Team from './pages/OurTeam';
 import Contact from './pages/Contact';
 import Projects from './pages/AllProjects';
+import Services from './pages/Services';
 
 function App() {
 	const [currentProject, setCurrentProject] = useState({});
@@ -23,9 +24,12 @@ function App() {
 				/>
 				<Route path="/about" element={<About />} />
 				<Route path="/team" element={<Team />} />
-				 <Route path="/projects" element={<Projects handleCurrentProject={handleCurrentProject}/>} />
-        {/* <Route path="/services" element={<Services />} /> */}
-        <Route path="/contact" element={<Contact />} /> 
+				<Route
+					path="/projects"
+					element={<Projects handleCurrentProject={handleCurrentProject} />}
+				/>
+				<Route path="/services" element={<Services />} />
+				<Route path="/contact" element={<Contact />} />
 				<Route
 					path="/project"
 					element={<Project currentProject={currentProject} />}

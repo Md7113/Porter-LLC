@@ -1,17 +1,21 @@
-// import { Link } from 'react-router-dom';
 import projectFile from '../utils/projectFile';
 import { useNavigate } from 'react-router-dom';
-import '../css/AllProjects.css';
+import '../css/pages/AllProjects.css';
 
 const AllProjects = ({ handleCurrentProject }) => {
+	
+	// returns an array of projects
+	let projects = projectFile();
+
+	// 
 	const navigate = useNavigate();
+
+	// Redirects to the current project page
 	function handleProjectNavigate(project) {
-		// const project = e.target;
-		console.log(project)
 		handleCurrentProject(project);
 		navigate('/project', { state: { currentProject: { project } } });
 	}
-	let projects = projectFile();
+	
 	return (
 		<div className='allProjectsContainer'>
 			<h2>PROJECTS</h2>

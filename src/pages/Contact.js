@@ -16,92 +16,74 @@ export default function Contact() {
 	const [errorMessage, setErrorMessage] = useState('');
 	const form = useRef();
 
+	// Sets the error message when something has not been entered into the input field
 	const handleKeyUp = (e) => {
 		const inputType = e.target.name;
 		const inputValue = e.target.value;
-		switch (inputType){
-			case 'email': setErrorMessage('Email required');
-			break;
-			case'company': setErrorMessage('Company name required');
-			break;
-			case 'firstName':;
-			case'lastName': setErrorMessage('Company name required');
-			break;
-			case 'phoneNumber': setErrorMessage('Phone number required');
-			break;
-			case'subject': setErrorMessage('Subject required');
-			break;
-			case'message': setErrorMessage('Please enter a brief message and the best time to reach you.');
-			break;
-			default: setErrorMessage('');
-			break;
-		}
-		// if (inputType === 'email') {
-		// 	if (!inputValue) {
-		// 		setErrorMessage('Email required');
-		// 	} else {
-		// 		setErrorMessage('');
-		// 	}
-		// }
-		// if (inputType === 'company') {
-		// 	if (!inputValue) {
-		// 		setErrorMessage('Company name required');
-		// 	} else {
-		// 		setErrorMessage('');
-		// 	}
-		// } else if (inputType === 'firstName' || inputType === 'lastName') {
-		// 	if (!inputValue) {
-		// 		setErrorMessage('Name required');
-		// 	} else {
-		// 		setErrorMessage('');
-		// 	}
-		// } else if (inputType === 'phoneNumber') {
-		// 	if (!inputValue) {
-		// 		setErrorMessage('Phone number required');
-		// 	} else {
-		// 		setErrorMessage('');
-		// 	}
-		// } else if (inputType === 'subject') {
-		// 	if (!inputValue) {
-		// 		setErrorMessage('Phone number required');
-		// 	} else {
-		// 		setErrorMessage('');
-		// 	}
-		// }else if (inputType === 'message') {
-		// 	if (!inputValue) {
-		// 		setErrorMessage(
-		// 			'Please enter a brief message and the best time to reach you.'
-		// 		);
-		// 	} else {
-		// 		setErrorMessage('');
-		// 	}
-		// }
-	};
-
-	const handleInputChange = (e) => {
-		const { target } = e;
-		const inputType = target.name;
-		const inputValue = target.value;
-
-		if (inputType === 'email') {
-			setEmail(inputValue);
-		} else if (inputType === 'firstName') {
-			setFirstName(inputValue);
-		} else if (inputType === 'lastName') {
-			setLastName(inputValue);
-		} else if (inputType === 'phoneNumber') {
-			setPhoneNumber(inputValue);
-		}else if (inputType === 'email') {
-			setEmail(inputValue);
-		}else if (inputType === 'company') {
-			setCompany(inputValue);
-		}else if (inputType === 'subject') {
-			setSubject(inputValue);
+		if (!inputValue) {
+			switch (inputType) {
+				case 'email':
+					setErrorMessage('Email required');
+					break;
+				case 'company':
+					setErrorMessage('Company name required');
+					break;
+				case 'firstName':
+				case 'lastName':
+					setErrorMessage('Company name required');
+					break;
+				case 'phoneNumber':
+					setErrorMessage('Phone number required');
+					break;
+				case 'subject':
+					setErrorMessage('Subject required');
+					break;
+				case 'message':
+					setErrorMessage(
+						'Please enter a brief message and the best time to reach you.'
+					);
+					break;
+				default:
+					setErrorMessage('');
+					break;
+			}
 		} else {
-			setMessage(inputValue);
+			setErrorMessage('');
 		}
 	};
 
+	// saves and displays the information that is input in the input field
+	const handleInputChange = (e) => {
+		const inputType = e.target.name;
+		const inputValue = e.target.value;
+		switch (inputType) {
+			case 'email':
+				setEmail(inputValue);
+				break;
+			case 'company':
+				setCompany(inputValue);
+				break;
+			case 'firstName':
+				setFirstName(inputValue);
+				break;
+			case 'lastName':
+				setLastName(inputValue);
+				break;
+			case 'phoneNumber':
+				setPhoneNumber(inputValue);
+				break;
+			case 'subject':
+				setSubject(inputValue);
+				break;
+			case 'message':
+				setMessage(inputValue);
+				break;
+			default:
+				break;
+		}
+	};
+
+	// confirms all information has been entered and validates the input
 	const handleContactSubmit = (e) => {
 		e.preventDefault();
 		if (!validateEmail(email)) {
@@ -158,6 +140,7 @@ export default function Contact() {
 				}
 			);
 
+	    // resets the input field
 		setFirstName('');
 		setLastName('');
 		setMessage('');
@@ -248,7 +231,7 @@ export default function Contact() {
 						onClick={handleKeyUp}
 					/>
 					{errorMessage && (
-						<div className='contactErrorMessage'>
+						<div className="contactErrorMessage">
 							<p className="error-text">{errorMessage}</p>
 						</div>
 					)}
@@ -259,9 +242,18 @@ export default function Contact() {
 				<div className="imgContactInfoContainer">
 					<img src={contactImg} alt="" />
 					<div className="businessInfoContact">
-						<div> <span>Sacrament</span> | Phone:530.354.4450 </div>
-						<div> <span>Southern California</span> | Phone: 949.514.5978 </div>
-						<div> <span>Bay Area</span> | Phone: 360.927.8881 </div>
+						<div>
+							{' '}
+							<span>Sacrament</span> | Phone:530.354.4450{' '}
+						</div>
+						<div>
+							{' '}
+							<span>Southern California</span> | Phone: 949.514.5978{' '}
+						</div>
+						<div>
+							{' '}
+							<span>Bay Area</span> | Phone: 360.927.8881{' '}
+						</div>
 						<div>
 							<a className="aTag" href="mailto:info@porterllc.com">
 								<span>Email:</span> info@porterllc.com

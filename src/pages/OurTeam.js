@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/OurTeam.css';
+import '../css/pages/OurTeam.css';
 import Tyler_Davis_func from '../pages/Employees/Tyler_Davis/TD_Page' 
 let tyler_davis = Tyler_Davis_func()
 
