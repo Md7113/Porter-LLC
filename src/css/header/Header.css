@@ -2,14 +2,15 @@
 	background-color: var(--porter_black);
 	display: flex;
 	justify-content: space-between;
-	padding-bottom: 30px;
+	padding: 30px 0 ;
 }
 
 /*********** Logo Image **************/
+.logo_link{
+	margin-left: 5%;
+}
 .logo_img {
-	padding-left: 40px;
-	padding-top: 30px;
-	height: 85px;
+	height: 55px;
 }
 .logoVid{
 	/* padding-left: 40px;
@@ -58,9 +59,14 @@
 }
 
 @media screen and (max-width: 971px) {
+	.logo_img {
+		/* padding-left: 40px; */
+		padding-top: 30px;
+		padding: 5px 0;
+	}
 	.nav_container {
 		margin: auto 5%;
-		padding-top:10px ;
+		/* padding-top:10px ; */
 		background-color: var(--porter_black);
 	}
 	.hamburger {
@@ -94,5 +100,10 @@
 		padding: 15px 25px;
 		background-color: var(--porter_black);
 		border: solid 1px var(--ebb_white);
+	}
+}
+@media screen and (max-width: 500px) {
+	.logo_img {
+		height: 50px;
 	}
 }

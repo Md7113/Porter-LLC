@@ -6,11 +6,10 @@
     background-image: url('../../images/Porter_LinkedIn_Cover_Black.png');
     min-height: calc(100vh - 118px );
     background-size:cover;
-    background-repeat: no-repeat;
 }
 
 .home_content{
-    padding: 2% 5%;
+    padding: 10px 5%;
 }
 
 h1 {
@@ -35,4 +34,10 @@ h1 {
 	to {
 		transform: translateY(20px);
 	}
+}
+
+@media screen and (max-width: 1675px) {
+    .downArrow {
+        display: none;
+    } 
 }
