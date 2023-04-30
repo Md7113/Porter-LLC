@@ -11,6 +11,20 @@
 	padding-top: 30px;
 	height: 85px;
 }
+.logoVid{
+	/* padding-left: 40px;
+	padding-top: 30px; */
+	height: 185px;
+	width: 85px;
+	/* position: relative; */
+	/* width: 320px; */
+	/* overflow: hidden; */
+	/* object-fit: contain; */
+}
+.logoVid video{
+	height: 100%;
+	object-fit: fill;
+}
 
 /*********** Navigation Bar **************/
 .nav_container {
@@ -28,4 +42,57 @@
 }
 .nav_link:hover {
 	color: var(--red_orange);
+}
+.hamburger {
+	display: none;
+	cursor: pointer;
+}
+.bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 7px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: var(--ebb_white);
+}
+
+@media screen and (max-width: 971px) {
+	.nav_container {
+		margin: auto 5%;
+		padding-top:10px ;
+		background-color: var(--porter_black);
+	}
+	.hamburger {
+		display: block;
+	}
+	.hamburger.active .bar:nth-child(2) {
+		opacity: 0;
+	}
+	.hamburger.active .bar:nth-child(1) {
+		transform: translateY(10px) rotate(45deg);
+	}
+	.hamburger.active .bar:nth-child(3) {
+		transform: translateY(-10px) rotate(-45deg);
+	}
+	.navbar_nav {
+		display: none;
+	}
+	.navbarDropdown {
+		display: flex;
+		position: fixed;
+		z-index: 3;
+		right: 5%;
+		margin-top: 15px;
+		flex-direction: column;
+		text-align: center;
+	}
+	.navbarDropdown a {
+		margin: 3px;
+		font-size: 25px;
+		border-radius: 5px;
+		padding: 15px 25px;
+		background-color: var(--porter_black);
+		border: solid 1px var(--ebb_white);
+	}
 }
