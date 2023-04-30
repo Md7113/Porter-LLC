@@ -1,10 +1,12 @@
 .card_row {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
+    flex-wrap: wrap;
 }
 
 .card_row div {
     width: 33%;
+    min-width: 265px;
 }
 
 .border_top {
@@ -30,3 +32,11 @@
     margin-left: 5%;
     margin-right: 36%;
 }
+
+/* @media screen and (min-width: 1600px) {
+    .card_row {
+        display: flex;
+        justify-content: space-evenly; 
+        flex-wrap: wrap;
+    }
+} */

@@ -1,11 +1,12 @@
 .display_rows > div {
-	margin: 20px 5%;
+	margin: 20px 0;
 }
 
 .line_spacing {
 	line-height: 25px;
 }
 
-.display_rows {
-	margin: 5%;
+.display_rows > hr {
+	margin: 20px 0;
+	width: 65%;
 }

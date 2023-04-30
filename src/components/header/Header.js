@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import NavBar from './Navbar';
-import logo from '../../images/logo_porter_black.svg';
-import logoVideo from '../../images/Porter_Logo_Animation.mp4';
+// import logo from '../../images/logo_porter_black.svg';
+import logoVideo from '../../images/porter-cropped.mp4';
 import '../../css/header/Header.css'
 
 function Header() {
@@ -19,14 +19,14 @@ function Header() {
     return(
         <header className="header_container">
 			<Link to="/" className="logo_link">
-				{/* <div className="logoVid">
+				<div className="logoVid">
 				<video src={logoVideo} autoPlay muted preload="auto"/>
-				</div> */}
-				<img
+				</div>
+				{/* <img
 					className="logo_img"
 					src={logo}
 					alt="Porter logo"
-				/>
+				/> */}
 			</Link>
 			<nav className="nav_container">
 				<ul className="navbar_nav">

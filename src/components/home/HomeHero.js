@@ -4,7 +4,7 @@ import '../../css/home/HomeHero.css'
 
 const HomeHero = () => {
     return (
-        <div >
+        <div className= 'homeContentContainer'>
             <h2 className="intro_title">BUILDING A DIFFERENCE</h2>
             <HomeContent />
         </div>

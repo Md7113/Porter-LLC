@@ -1,5 +1,6 @@
 .contactMe {
 	padding: 60px;
+	background-color: var(--eb_white);
 }
 .contactMe h2 {
 	color: var(--porter_black);
@@ -22,6 +23,7 @@
 	justify-content: center;
 }
 .input {
+	background-color: white;
 	padding: 20px;
 	margin: 20px;
 	width: 40%;
@@ -30,6 +32,7 @@
 	outline: 2px solid var(--red_orange);
 }
 .inputTextArea {
+	background-color: white;
 	width: 84%;
 	margin: 20px 75px;
 	height: 100px;
