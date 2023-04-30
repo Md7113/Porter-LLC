@@ -1,15 +1,19 @@
-.Our_Team_content{
+.allTeamContainer{
     background-color: var(--ebb_white);
     padding: 5%;
     padding-top: 3.5%;
     width: 100%;
 }
 
-.Our_Team_content h1{
+.allTeamContainer h1{
     color: var(--porter_black);
     font-size: 65px;
     border-top: 8px solid var(--porter_black);
     margin-bottom: 20px;
+}
+
+.allTeam {
+    display: flex;
 }
 
 .Team_img{   
@@ -27,7 +31,19 @@
 }
 
 .Team_Name{
+    font-size: 35px;
+    color: var(--porter_black);
+    font-family: var(--text_font);
+    justify-content: left;
+}
+.Team_Title{
     font-size: 25px;
     color: var(--porter_black);
     font-family: var(--text_font);
 }
+.teamBioLink{
+    font-size: 25px;
+    color: var(--porter_black);
+    font-family: var(--text_font);
+}
+
