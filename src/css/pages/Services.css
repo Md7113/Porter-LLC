@@ -1,5 +1,5 @@
 .servicesContainer {
-	padding: 60px;
+    padding: min(30px, 5%);
     background-color: var(--porter_black);
 }
 .servicesContainer hr{
@@ -8,7 +8,6 @@
     height: 5px;
     background-color: var(--red_orange);
 }
-
 .servicesContainer h2 {
 	color: var(--ebb_white);
 	font-size: 65px;
@@ -21,8 +20,6 @@
 	justify-content: center;
     flex-flow: row wrap;
 	background-color: var(--porter_black);
-    padding: 40px 60px;
-    gap:40px;
     align-content: space-around;
 }
 
@@ -30,7 +27,6 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    width: 30vw;
     padding: 20px ;
     min-width: 300px;
     max-width:520px;
