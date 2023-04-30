@@ -1,12 +1,12 @@
-.display_rows > div {
+.displayRows > div {
 	margin: 20px 0;
 }
 
-.line_spacing {
+.lineSpacing {
 	line-height: 25px;
 }
 
-.display_rows > hr {
+.displayRows > hr {
 	margin: 20px 0;
 	width: 65%;
 }

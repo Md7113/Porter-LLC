@@ -11,27 +11,27 @@ function CarouselCard({ project, handleCurrentProject }) {
 	}
 	const pattern =/(^(?:\S+\s+\n?){1,10})/;
 	return (
-		<div className="carousel_Project_card">
-			<hr className="head_line_break" />
-			<div className="carousel_padding project_title">
-				<h2 className="project_name">{project.businessName}</h2>
-				<p className="project_location">{project.location}</p>
+		<div className="carouselProjectCard">
+			<hr className="headLineBreak" />
+			<div className="projectTitle">
+				<h2 className="projectName">{project.businessName}</h2>
+				<p className="projectLocation">{project.location}</p>
 			</div>
-			<hr className="Lower_line_break "></hr>
-			<p className="carousel_padding">
+			<hr className="LowerLineBreak "></hr>
+			<p className="carouselPadding projectDescription">
 				{(project.description.match(pattern) + "...")}
 			</p>
-			<hr className="Lower_line_break"></hr>
-			<div className="project_link" onClick={handleProjectSave}>
-				<div className="carousel_padding">
+			<hr className="LowerLineBreak"></hr>
+			<div className="projectLink" onClick={handleProjectSave}>
+				<div className="carouselPadding">
 					<img src={project.img} />
 				</div>
-				<div className="project_link arrow">
+				<div className="projectLink arrow">
 					<span>VIEW PROJECT</span>
-					<img className="arrow_link" src={arrow} alt="right arrow" />
+					<img className="arrowLink" src={arrow} alt="right arrow" />
 				</div>
 			</div>
-			<hr className="Lower_line_break"></hr>
+			<hr className="LowerLineBreak"></hr>
 		</div>
 	);
 }

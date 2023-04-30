@@ -1,14 +1,14 @@
 import React from 'react';
 import HomeContent from './HomeContent';
-import '../../css/home/HomeHero.css'
+import '../../css/home/HomeSections.css'
 
-const HomeHero = () => {
+const HomeSections = () => {
     return (
         <div className= 'homeContentContainer'>
-            <h2 className="intro_title">BUILDING A DIFFERENCE</h2>
+            <h2 className="introTitle">BUILDING A DIFFERENCE</h2>
             <HomeContent />
         </div>
     )
 }
 
-export default HomeHero;
+export default HomeSections;

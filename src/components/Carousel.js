@@ -23,7 +23,7 @@ export default function MultiCarousel({ handleCurrentProject }) {
 
 	const CustomButtonGroupAsArrows = ({ next, previous }) => {
 		return (
-			<div className="carousel_arrows">
+			<div className="carouselArrows">
 				<img
 					className="arrows"
 					onClick={previous}

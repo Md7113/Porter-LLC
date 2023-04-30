@@ -13,33 +13,33 @@ const HomeContent = () => {
 	const line2 = homeContent[1];
 	
 	return (
-		<section className="display_rows">
+		<section className="displayRows">
 			<Fade bottom>
-			<CardContainer className="border_top card_padding">
-				<TextCard className="line_spacing" content={line1.section1} />
-                <TextTitle className="font_title"
+			<CardContainer className="borderTop cardPadding">
+				<TextCard className="lineSpacing" content={line1.section1} />
+                <TextTitle className="fontTitle"
 					title={line1.section2[0]}
 					content={line1.section2[1]}/>
-                <TextTitle className="font_title"
+                <TextTitle className="fontTitle"
 					title={line1.section3[0]}
 					content={line1.section3[1]}/>
 			</CardContainer>
 			<hr className='hr'/>
-			<CardContainer className="card_padding card_height">
+			<CardContainer className="cardPadding cardHeight">
 				<TextLink
-					className="line_spacing"
+					className="lineSpacing"
 					title={line2.section1[0]}
 					content={line2.section1[1]}
 					linkContent={line2.section1[2]}
 				/>
 				<TextLink
-					className="line_spacing"
+					className="lineSpacing"
 					title={line2.section2[0]}
 					content={line2.section2[1]}
 					linkContent={line2.section2[2]}
 				/>
 				<TextLink
-					className="line_spacing contrast_card"
+					className="lineSpacing contrastCard"
 					title={line2.section3[0]}
 					content={line2.section3[1]}
 					linkContent={line2.section3[2]}

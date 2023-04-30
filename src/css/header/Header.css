@@ -1,4 +1,4 @@
-.header_container {
+.headerContainer {
 	background-color: var(--porter_black);
 	display: flex;
 	justify-content: space-between;
@@ -6,10 +6,10 @@
 }
 
 /*********** Logo Image **************/
-.logo_link{
+.logoLink{
 	margin-left: 5%;
 }
-.logo_img {
+.logoImg {
 	height: 55px;
 }
 .logoVid{
@@ -28,20 +28,20 @@
 }
 
 /*********** Navigation Bar **************/
-.nav_container {
+.navContainer {
 	display: flex;
 	margin-right: 5%;
 	align-items: flex-end;
 }
-.navbar_nav {
+.navbarNav {
 	display: flex;
 }
-.nav_link {
+.navLink {
 	color: var(--ebb_white);
 	margin: 0px 10px;
 	font-size: 24px;
 }
-.nav_link:hover {
+.navLink:hover {
 	color: var(--red_orange);
 }
 .hamburger {
@@ -59,12 +59,12 @@
 }
 
 @media screen and (max-width: 971px) {
-	.logo_img {
+	.logoImg {
 		/* padding-left: 40px; */
 		padding-top: 30px;
 		padding: 5px 0;
 	}
-	.nav_container {
+	.navContainer {
 		margin: auto 5%;
 		/* padding-top:10px ; */
 		background-color: var(--porter_black);
@@ -81,7 +81,7 @@
 	.hamburger.active .bar:nth-child(3) {
 		transform: translateY(-10px) rotate(-45deg);
 	}
-	.navbar_nav {
+	.navbarNav {
 		display: none;
 	}
 	.navbarDropdown {
@@ -103,7 +103,7 @@
 	}
 }
 @media screen and (max-width: 500px) {
-	.logo_img {
+	.logoImg {
 		height: 50px;
 	}
 }

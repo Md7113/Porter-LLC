@@ -1,48 +1,48 @@
 /*  main container */
-.project_section {
+.projectSection {
     background-color: var(--porter_black);
     color:var(--ebb_white);
 }
-.project_container {
+.projectContainer {
 	display: flex;
 	margin-left: 5%;
 }
 
 /* business name, location and description */
-.project_content {
+.projectContent {
 	margin-top: 4%;
 	display: flex;
 	flex-direction: column;
     justify-content: space-between;
     padding-bottom: 3%;
 }
-.project_title_content {
+.projectTitleContent {
     display: flex;
 	flex-direction: column;
 }
-.project_details{
+.projectDetails{
     margin: 10px;
 }
-.project_name_section{
+.projectNameSection{
     margin: 10px;
     font-size: 40px;
 }
-.project_description_section{
+.projectDescriptionSection{
     line-height: 25px;
 }
 
 /* images */
-.project_img_container {
+.projectImgContainer {
 	display: flex;
 	height: 87vh;
 	margin-right: 5%;
 }
-.project_main_img {
+.projectMainImg {
 	width: 50vw;
 	margin: 4.2%;
 	object-fit: contain;
 }
-.project_small_img {
+.projectSmallImg {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;

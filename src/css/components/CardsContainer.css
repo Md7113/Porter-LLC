@@ -1,30 +1,30 @@
-.card_row {
+.cardRow {
     display: flex;
     justify-content: space-evenly; 
     flex-wrap: wrap;
 }
 
-.card_row div {
+.cardRow div {
     width: 33%;
     min-width: 265px;
 }
 
-.border_top {
+.borderTop {
     border-top: 5px solid black;
     padding-top: 40px;
 }
-.card_padding{
+.cardPadding{
     padding-bottom: 15px;
 }
-.card_padding div{
+.cardPadding div{
         padding-right:100px ;    
 }
 
-.font_title h3 {
+.fontTitle h3 {
 	font-size: 65px;
 	padding-bottom: 10px;
 }
-.font_title p {
+.fontTitle p {
 	font-size: 24px;
 }
 

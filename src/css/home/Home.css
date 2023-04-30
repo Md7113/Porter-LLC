@@ -1,14 +1,14 @@
-.main_background{
+.mainBackground{
     width: 100%;
 }
 
-.home_page{  
+.homePage{  
     background-image: url('../../images/Porter_LinkedIn_Cover_Black.png');
     min-height: calc(100vh - 118px );
     background-size:cover;
 }
 
-.home_content{
+.homeContent{
     padding: 10px 5%;
 }
 

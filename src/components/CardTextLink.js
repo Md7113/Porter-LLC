@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const CardTitleText = (props) => {
-	let classes = 'text_link_format ' + props.className;
+	let classes = 'textLinkFormat ' + props.className;
 	const navigate = useNavigate();
 
 	const handleLink = (e) => {

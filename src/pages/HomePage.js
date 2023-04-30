@@ -2,15 +2,15 @@ import React from 'react';
 import '../css/home/Home.css';
 import Carousel from '../components/Carousel';
 import '../css/components/Carousel.css';
-import HomeHero from '../components/home/HomeHero';
+import HomeSections from '../components/home/HomeSections';
 
 const HomePage = ({handleCurrentProject}) => {
 	return (
 		<>
-		<div className="home_page">
-			<div className="home_content">
+		<div className="homePage">
+			<div className="homeContent">
 				<h1 className = "title1">build a legacy</h1>
-				<div className="carousel_container">
+				<div className="carouselContainer">
 					<Carousel  handleCurrentProject= {handleCurrentProject} />
 				</div>
 		
@@ -28,7 +28,7 @@ const HomePage = ({handleCurrentProject}) => {
 				/>
 			</svg>
 		</div>
-		<HomeHero/>
+		<HomeSections/>
 		</>
 	);
 };

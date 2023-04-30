@@ -1,4 +1,4 @@
-.contrast_card {
+.contrastCard {
     background-color: var(--red_orange);
     padding: 20px 20px;
     margin: -20px 0 -20px -20px;
@@ -6,7 +6,7 @@
     font-weight:600;
 }
 
-.text_link_format {
+.textLinkFormat {
     display:flex;
     flex-direction: column;
     justify-self: flex-end;
@@ -17,25 +17,25 @@
     font-size: 25px;
     padding-bottom: 30px;
 }
-.text_link_format p{
+.textLinkFormat p{
     padding-bottom: 40px;
     height: 265px;
 }
 
-.text_link_format span{
+.textLinkFormat span{
     font-weight: 700;
     color: var(--red_orange);
 }
-.text_link_format span:hover{
+.textLinkFormat span:hover{
     color: var(--porter_black);
 }
-.contrast_card > span{
+.contrastCard > span{
     color: var(--porter_black);
     font-size: 17px;
 }
-.contrast_card > span:hover{
+.contrastCard > span:hover{
     color: var(--ebb_white);
 }
-.contrast_card p{
+.contrastCard p{
     height: 235px;
 }
