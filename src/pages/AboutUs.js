@@ -4,11 +4,10 @@ import About_img from '../images/about-us.png';
 
 const About_Us_Page = () => {
 	return (
-		<div className="About_Us_page">
-			<div className="About_Us_content">
+			<div className="AboutUsPage">
 				<h1>ABOUT US</h1>
-				<div className="About_div">
-					<div className="About_p">
+				<div className="AboutContainer">
+					<div className="AboutContent">
 						<p>
 							Porter is a team of some of the most adept construction and
 							program managers in the industry. We came together in 2006 under a
@@ -35,10 +34,9 @@ const About_Us_Page = () => {
 							exceptional results. Partner with us today
 						</p>
 					</div>
-					<img style={{objectFit: 'contain'}} src={About_img} alt= ''/>
+					<img src={About_img} alt= ''/>
 				</div>
 			</div>
-		</div>
 	);
 };
 
