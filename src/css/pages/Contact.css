@@ -11,6 +11,7 @@
 }
 .contactMeContainer {
 	display: flex;
+	flex-wrap: wrap;
 }
 .contactBox {
 	border-top: 3px solid var(--porter_black);
@@ -21,12 +22,14 @@
 .contactBox div {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 .input {
 	background-color: white;
 	padding: 20px;
 	margin: 20px;
 	width: 40%;
+	min-width: 400px;
 }
 .input:focus {
 	outline: 2px solid var(--red_orange);
@@ -54,7 +57,9 @@
 	background-color: var(--red_orange);
 	color: var(--porter_black);
 }
-
+.imgContactInfoContainer {
+	width: 450px;
+}
 .imgContactInfoContainer img {
 	margin-top: 20px;
 	max-height: 450px;
@@ -74,4 +79,8 @@
 }
 .aTag {
 	color: var(--red_orange);
+}
+
+@media screen and (min-width: 1215px) {
+
 }
