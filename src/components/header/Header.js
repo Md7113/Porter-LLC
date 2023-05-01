@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from './Navbar';
 import logo from '../../images/logo_porter_black.svg';
-import logoVideo from '../../images/Porter_Logo_Video.mp4';
+import logoVideo from '../../images/Porter-logo.mp4';
 import '../../css/header/Header.css';
 
 function Header() {

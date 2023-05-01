@@ -4,8 +4,6 @@ import teamFile from '../utils/team'
 import Slide from 'react-reveal/Slide';
 import { useNavigate } from 'react-router-dom';
 
-
-
 const Our_Team_Page = ({ handleCurrentTeam }) => {
 	// returns an array of team members
 	let Team = teamFile();
