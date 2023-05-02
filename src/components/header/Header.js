@@ -35,7 +35,7 @@ function Header() {
 				<div className={`${endVideo}`}>
 					<video
 						src={logoVideo}
-						onEnded={handleVideoEnd}
+						// onEnded={handleVideoEnd}
 						autoPlay
 						muted
 						preload="auto"

@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { checkPhoneNumber, validateEmail } from '../utils/helpers';
-import contactImg from '../images/shaking-hands-sm.jpg';
+// import contactImg from '../images/shaking-hands-sm.jpg';
+import contactImg from '../images/contact_us.jpg';
 import '../css/pages/Contact.css';
 import sWal from 'sweetalert';
 import emailjs from '@emailjs/browser';
@@ -140,7 +141,7 @@ export default function Contact() {
 				}
 			);
 
-	    // resets the input field
+		// resets the input field
 		setFirstName('');
 		setLastName('');
 		setMessage('');
@@ -241,19 +242,25 @@ export default function Contact() {
 				</form>
 				<div className="imgContactInfoContainer">
 					<img src={contactImg} alt="" />
-					<div className="businessInfoContact">
+					<div className="businessContactInfo">
 						<div>
-							<span>Sacrament</span> | Phone:530.354.4450
+							<span>Northern California: </span>
+							<p> 149 Parkshore </p>
+							<p>Drive Folsom, CA 95630</p>
 						</div>
 						<div>
-							<span>Southern California</span> | Phone: 949.514.5978
+							<span>Bay Area: </span>
+							<p>388 Market Street Suite 1300,</p>
+							<p> San Francisco, CA 94111</p>
 						</div>
 						<div>
-							<span>Bay Area</span> | Phone: 360.927.8881
+							<span>Southern California:</span>{' '}
+							<p>516 N Sepulveda Blvd </p>
+							<p> Manhattan Beach, CA 90266</p>
 						</div>
 						<div>
 							<a className="aTag" href="mailto:info@porterllc.com">
-								<span>Email:</span> info@porterllc.com
+								<span>Email:</span> <p>info@porterllc.com</p>
 							</a>
 						</div>
 					</div>

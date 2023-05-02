@@ -15,6 +15,7 @@
 .logoVid{
 	margin: -5% -2% 0 0;
 	height: 85px;
+	border: solid 1px var(--porter_black);
 }
 .logoVid video{
 	height: 100%;

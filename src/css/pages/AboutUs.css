@@ -1,18 +1,17 @@
-.AboutUsPage{
+.aboutUsPage{
     background-color: var(--ebb_white);
     padding: 2% 5%;
     width: 100%;
-    /* height: calc(); */
 }
 
-.AboutUsPage h1{
+.aboutUsPage h1{
     color: var(--porter_black);
     font-size: 65px;
     border-top: 8px solid var(--porter_black);
     margin-bottom: 20px;
 }
 
-.AboutContainer {
+.aboutContainer {
  font-family: var(--text_font);
  padding-top: 40px;
  border-top: 3px solid var(--porter_black);
@@ -22,7 +21,11 @@
  display: flex;
 }
 
-.AboutContainer img{
+.aboutContainer img{
     width: 68vw;
+    object-fit: contain;
     margin-left: 40px;
+}
+.aboutContent p {
+    margin-bottom: 30px;
 }
