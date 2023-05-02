@@ -6,6 +6,7 @@ const About_Us_Page = () => {
 	return (
 			<div className="aboutUsPage">
 				<h1>ABOUT US</h1>
+				<hr/>
 				<div className="aboutContainer">
 					<div className="aboutContent">
 						<p>

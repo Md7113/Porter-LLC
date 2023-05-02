@@ -1,31 +1,46 @@
-.aboutUsPage{
-    background-color: var(--ebb_white);
-    padding: 2% 5%;
-    width: 100%;
+.aboutUsPage {
+	background-color: var(--ebb_white);
+	padding: min(20px, 2%) min(30px, 5%);
+	width: 100%;
 }
 
-.aboutUsPage h1{
-    color: var(--porter_black);
-    font-size: 65px;
-    border-top: 8px solid var(--porter_black);
-    margin-bottom: 20px;
+.aboutUsPage h1 {
+	color: var(--porter_black);
+	font-size: 65px;
+	border-top: 8px solid var(--porter_black);
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
-
+.aboutUsPage hr {
+	width: 65%;
+	border-top: 3px solid var(--porter_black);
+}
 .aboutContainer {
- font-family: var(--text_font);
- padding-top: 40px;
- border-top: 3px solid var(--porter_black);
- line-height: 30px;
- font-size: 20px;
- margin-top: 30px;
- display: flex;
+	font-family: var(--text_font);
+	padding-top: 30px;
+	line-height: 30px;
+	font-size: 20px;
+	display: flex;
 }
 
-.aboutContainer img{
-    width: 68vw;
-    object-fit: contain;
-    margin-left: 40px;
+.aboutContainer img {
+	width: 68vw;
+	object-fit: contain;
+	margin-left: 40px;
 }
 .aboutContent p {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
+}
+@media screen and (max-width: 1620px) {
+	.aboutContainer {
+		flex-wrap: wrap;
+	}
+	.aboutContainer img {
+		width: 100%;
+		margin: 0 0 30px;
+		order: 1;
+	}
+	.aboutContent {
+		order: 2;
+	}
 }
