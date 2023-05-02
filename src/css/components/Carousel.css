@@ -72,3 +72,9 @@
 .arrowLink {
 	padding: 30px;
 }
+
+@media screen and (max-width: 1360px) {	
+    .carousel {
+		display: none;
+	}
+}

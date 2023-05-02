@@ -243,16 +243,13 @@ export default function Contact() {
 					<img src={contactImg} alt="" />
 					<div className="businessInfoContact">
 						<div>
-							{' '}
-							<span>Sacrament</span> | Phone:530.354.4450{' '}
+							<span>Sacrament</span> | Phone:530.354.4450
 						</div>
 						<div>
-							{' '}
-							<span>Southern California</span> | Phone: 949.514.5978{' '}
+							<span>Southern California</span> | Phone: 949.514.5978
 						</div>
 						<div>
-							{' '}
-							<span>Bay Area</span> | Phone: 360.927.8881{' '}
+							<span>Bay Area</span> | Phone: 360.927.8881
 						</div>
 						<div>
 							<a className="aTag" href="mailto:info@porterllc.com">
