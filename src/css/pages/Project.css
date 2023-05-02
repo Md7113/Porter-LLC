@@ -2,7 +2,23 @@
 .projectSection {
     background-color: var(--porter_black);
     color:var(--ebb_white);
+	width: 100vw;
+	height: calc(100vh - 130px);
 }
+.projectSection hr{
+    color:var(--ebb_white);
+	margin: 0 5%;
+    height: 8px;
+    background-color: var(--ebb_white);
+}
+.projectSection .projectTitleContent hr{
+    color:var(--ebb_white);
+    height: 5px;
+	margin: 5px;
+	width: 100%;
+    background-color: var(--ebb_white);
+}
+
 .projectContainer {
 	display: flex;
 	margin-left: 5%;
@@ -23,6 +39,10 @@
 .projectDetails{
     margin: 10px;
 }
+.projectDetails span{
+    margin: 10px;
+	font-weight: 800;
+}
 .projectNameSection{
     margin: 10px;
     font-size: 40px;
@@ -34,17 +54,38 @@
 /* images */
 .projectImgContainer {
 	display: flex;
-	height: 87vh;
+	/* height: 85vh; */
 	margin-right: 5%;
 }
 .projectMainImg {
-	width: 50vw;
-	margin: 4.2%;
+	width: 60vw;
+	padding: 30px;
 	object-fit: contain;
 }
+
 .projectSmallImg {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 }
 
+
+@media screen and (max-width: 1260px) {
+	.projectSection {
+		height: 100%;
+	}
+	.projectContainer {
+		flex-wrap: wrap;
+	}
+	.projectImgContainer img{
+		width: 100%;
+		order: 1;
+	}
+	.projectContent {
+		margin: 0 5%  0 0;
+		order: 2;
+	}
+	.projectSection .projectTitleContent hr{
+		width: 95%;
+	}
+}

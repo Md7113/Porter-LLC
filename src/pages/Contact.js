@@ -154,6 +154,7 @@ export default function Contact() {
 	return (
 		<section className="contactMe">
 			<h2>CONTACT</h2>
+			<hr/>
 			<div className="contactMeContainer">
 				<form className="contactBox" ref={form}>
 					<div>

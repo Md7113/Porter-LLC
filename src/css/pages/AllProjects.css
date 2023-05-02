@@ -5,6 +5,8 @@
 .allProjectsContainer hr{
 	width: 65%;
     color: var(--red_orange);
+    height: 5px;
+    background-color: var(--red_orange);
 }
 .allProjectsContainer h2 {
 	color: var(--ebb_white);

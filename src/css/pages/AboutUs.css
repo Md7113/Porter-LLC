@@ -12,8 +12,10 @@
 	margin-top: 20px;
 }
 .aboutUsPage hr {
-	width: 65%;
-	border-top: 3px solid var(--porter_black);
+    width: 65%;
+    color: var(--porter_black);
+    height: 5px;
+    background-color: var(--porter_black);
 }
 .aboutContainer {
 	font-family: var(--text_font);

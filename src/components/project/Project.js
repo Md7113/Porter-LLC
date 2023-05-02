@@ -20,7 +20,7 @@ export default function Project({ currentProject }) {
 					</div>
 					<p>
 						
-					<p className="projectDetails">Location: {currentProject.location}</p>
+					<p className="projectDetails"><span>Location:</span> {currentProject.location}</p>
 						<div className="projectDetails">
 							<span>Size: </span>
 							{currentProject.size} SF

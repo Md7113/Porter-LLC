@@ -12,12 +12,18 @@
 	margin: 0 5% 20px;
 	padding-top: 20px;
 }
+.contactMe hr{
+	width: 60%;
+    color: var(--porter_black);
+    height: 5px;
+    background-color: var(--porter_black);
+	margin-left: 5%;
+}
 .contactMeContainer {
 	display: flex;
 	flex-wrap: wrap;
 }
 .contactBox {
-	border-top: 3px solid var(--porter_black);
 	width: 60%;
 	margin: 0 40px 0 5%;
 	padding-top: 40px;
@@ -39,7 +45,7 @@
 .inputTextArea {
 	background-color: white;
 	width: 84%;
-	margin: 20px 75px;
+	margin: 20px 86px;
 	height: 100px;
 	padding: 20px;
 }
