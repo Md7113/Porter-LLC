@@ -10,6 +10,7 @@
 	font-size: 65px;
 	border-top: 8px solid var(--porter_black);
 	margin: 0 5% 20px;
+	font-weight: 700;
 	padding-top: 20px;
 }
 .contactMe hr{

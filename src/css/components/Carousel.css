@@ -1,8 +1,7 @@
 .carousel {
 	position: absolute;
-	width: min(579px, 30%);
-	left: 5%;
-	bottom: -10%;
+	width: max(579px, 30%);
+	top: 145%;
 	line-height: 25px;
 }
 .carouselArrows {
@@ -72,9 +71,21 @@
 .arrowLink {
 	padding: 30px;
 }
-
+@media screen and (max-width: 1675px) {
+    .carousel {
+		top: 150%;
+		width: 50%;
+	}
+}
 @media screen and (max-width: 1360px) {	
     .carousel {
-		display: none;
+		width: 60%;
+	}
+}
+@media screen and (max-width: 880px) {	
+    .carousel {
+		position: static;
+		width: 100%;
+		
 	}
 }

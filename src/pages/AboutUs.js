@@ -5,7 +5,7 @@ import About_img from '../images/about-us.png';
 const About_Us_Page = () => {
 	return (
 			<div className="aboutUsPage">
-				<h1>ABOUT US</h1>
+				<h2> ABOUT US </h2>
 				<hr/>
 				<div className="aboutContainer">
 					<div className="aboutContent">

@@ -1,34 +1,46 @@
-.mainBackground{
-    width: 100%;
+.homePage {
+	height: calc(100vh - 133px);
+	background-color: var(--porter_black);
+}
+.homeHeroContainer {
+	width: 100vw;
+}
+.homeHeroImage {
+	position: absolute;
+	z-index: 0;
+	width: calc(100vw - 25%);
+	object-fit: contain;
+	bottom: 0;
+    right: 0; 
+}
+.carouselPhone{
+    display:none;
+}
+.homeHeroContent {
+	padding: 10px 5%;
+	position: absolute;
+	top: 118px;
+	z-index: 1;
 }
 
-.homePage{  
-    background-image: url('../../images/Porter_LinkedIn_Cover_Black.png');
-    min-height: calc(100vh - 118px );
-    background-size: cover;
-}
-
-.homeContent{
-    padding: 10px 5%;
-}
-
-h1 {
-    padding-top: 1%;
-    font-size: 180px;
-    font-family: var(--title_font);
-    border-top: 10px solid var(--ebb_white);
-    color: var(--ebb_white);
-    width: 100%;
+.homeHeroContent h1 {
+	padding-top: 1%;
+	font-size: 180px;
+	font-weight: 700;
+	font-family: var(--title_font);
+	border-top: 10px solid var(--ebb_white);
+	color: var(--ebb_white);
+	width: 90vw;
 }
 
 .downArrow {
 	position: absolute;
-	bottom: 40px;
+	bottom: 60px;
 	right: 50%;
-	animation: 1s linear 1s infinite alternate animateDown ;
+	animation: 1s linear 1s infinite alternate animateDown;
 }
-@keyframes animateDown{
-	from{
+@keyframes animateDown {
+	from {
 		transform: translateY(0);
 	}
 	to {
@@ -36,14 +48,27 @@ h1 {
 	}
 }
 
+@media screen and (max-width: 1581px) {
+	.homeHeroContent h1 {
+		font-size: 100px;
+	}
+}
 @media screen and (max-width: 1675px) {
-    .downArrow {
-        display: none;
-    } 
-    h1 {
-        padding-top: 1%;
-        /* font-size: 100px; */
-    }
-    
+	.downArrow {
+		display: none;
+	}
 }
 
+@media screen and (max-width: 880px) {
+    .carouselContainer {
+		display:none;
+	}
+    .homeHeroImage {
+        width: 150%;
+    }
+    .carouselPhone{
+        display:block;
+        padding-top: 40px;
+        background-color: var(--porter_black);
+    }
+}
