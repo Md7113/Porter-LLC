@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react';
 import { checkPhoneNumber, validateEmail } from '../utils/helpers';
-// import contactImg from '../images/shaking-hands-sm.jpg';
 import contactImg from '../images/contact_us.jpg';
 import '../css/pages/Contact.css';
 import sWal from 'sweetalert';
@@ -132,7 +131,7 @@ export default function Contact() {
 					console.log(result.text);
 					sWal(
 						'message sent!',
-						'Thank you for contacting me. I will respond to your message in the next 24 hours to 48 hours to your request.',
+						'Thank you for contacting Porter. We will respond to your message in the next 24 hours to 48 hours.',
 						'success'
 					);
 				},
