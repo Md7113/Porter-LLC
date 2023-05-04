@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/home/Home.css';
+import '../css/home/HomeHero.css';
 import Carousel from '../components/Carousel';
 import '../css/components/Carousel.css';
 import HomeSections from '../components/home/HomeSections';

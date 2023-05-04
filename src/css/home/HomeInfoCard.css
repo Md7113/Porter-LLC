@@ -12,7 +12,7 @@
     justify-self: flex-end;
     align-content: center;
 }
- h3{
+.textLinkFormat h3{
     font-weight: 900;
     font-size: 25px;
     padding-bottom: 30px;
@@ -20,6 +20,7 @@
 .textLinkFormat p{
     padding-bottom: 40px;
     height: 265px;
+    min-width: 360px;
 }
 
 .textLinkFormat span{
@@ -38,4 +39,19 @@
 }
 .contrastCard p{
     height: 235px;
+}
+
+@media screen and (max-width: 1190px) {
+    .textLinkFormat h3{
+        text-decoration-line: underline ;
+    }
+}
+@media screen and (max-width: 410px) {
+    .textLinkFormat p{
+        min-width: 0px;
+        height: 100%;
+    }
+    .contrastCard p{
+        height: 100%;
+    }
 }

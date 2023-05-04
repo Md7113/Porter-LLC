@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const CardTitleText = (props) => {
+const HomeTextLinkCard = (props) => {
 	let classes = 'textLinkFormat ' + props.className;
 	const navigate = useNavigate();
 
@@ -30,4 +30,4 @@ const CardTitleText = (props) => {
 	);
 };
 
-export default CardTitleText;
+export default HomeTextLinkCard;

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from './Navbar';
 import logo from '../../images/logo_porter_black.svg';
+// import logoVideo from '../../images/Porter-logo-unscreen.png';
 import logoVideo from '../../images/Porter-logo.mp4';
 import '../../css/header/Header.css';
 
@@ -11,15 +12,15 @@ function Header() {
 	const [endVideo, setEndVideo] = useState('logoVid');
 	const [showLogo, setShowLogo] = useState('displayNone');
 
-	const handleVideoEnd = () => {
-		if (endVideo === 'logoVid') {
-			setEndVideo('displayNone');
-			setShowLogo('logoImg');
-		} else {
-			setEndVideo('logoVid');
-			setShowLogo('displayNone');
-		}
-	};
+	// const handleVideoEnd = () => {
+	// 	if (endVideo === 'logoVid') {
+	// 		setEndVideo('displayNone');
+	// 		setShowLogo('logoImg');
+	// 	} else {
+	// 		setEndVideo('logoVid');
+	// 		setShowLogo('displayNone');
+	// 	}
+	// };
 
 	const handleDropDown = () => {
 		setDropdown((dropDown) => !dropDown);
@@ -40,6 +41,10 @@ function Header() {
 						muted
 						preload="auto"
 					/>
+					{/* <img
+						src={logoVideo}
+						
+					/> */}
 				</div>
 				<img className={`${showLogo}`} src={logo} alt="Porter logo" />
 			</Link>

@@ -1,7 +1,7 @@
 import React from 'react'
-import '../css/components/CardTitleText.css';
+import '../../css/home/HomeInfoCard.css';
 
-const CardTitleText = (props) => {
+const HomeInfoCard = (props) => {
     let classes = ' ' + props.className;
     return (
       <div className= {classes}>
@@ -11,4 +11,4 @@ const CardTitleText = (props) => {
     );
 }
 
-export default CardTitleText;
+export default HomeInfoCard;

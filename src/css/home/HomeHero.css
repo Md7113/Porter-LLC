@@ -24,13 +24,17 @@
 }
 
 .homeHeroContent h1 {
-	padding-top: 1%;
+	padding-top: min(1%, 30px);
 	font-size: 180px;
 	font-weight: 700;
 	font-family: var(--title_font);
 	border-top: 10px solid var(--ebb_white);
 	color: var(--ebb_white);
 	width: 90vw;
+}
+.carouselContainer {
+	position: relative;
+	bottom: -5rem;
 }
 
 .downArrow {
@@ -67,8 +71,13 @@
         width: 150%;
     }
     .carouselPhone{
-        display:block;
+        display: block;
         padding-top: 40px;
         background-color: var(--porter_black);
     }
+}
+@media screen and (max-width: 455px){
+	.homeHeroContent h1 {
+		font-size: 65px;
+	}
 }
