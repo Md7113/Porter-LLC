@@ -11,10 +11,10 @@
 	width: calc(100vw - 25%);
 	object-fit: contain;
 	bottom: 0;
-    right: 0; 
+	right: 0;
 }
-.carouselPhone{
-    display:none;
+.carouselPhone {
+	display: none;
 }
 .homeHeroContent {
 	padding: 10px 5%;
@@ -64,19 +64,32 @@
 }
 
 @media screen and (max-width: 880px) {
-    .carouselContainer {
-		display:none;
+	.carouselContainer {
+		display: none;
 	}
-    .homeHeroImage {
-        width: 150%;
-    }
-    .carouselPhone{
-        display: block;
-        padding-top: 40px;
-        background-color: var(--porter_black);
-    }
+	.homeHeroImage {
+		width: 150%;
+	}
+	.carouselPhone {
+		display: block;
+		padding-top: 10px;
+		background-color: var(--porter_black);
+	}
 }
-@media screen and (max-width: 455px){
+@media screen and (max-width: 675px) {
+	.homeHeroImage {
+		position: relative;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		margin-top: 150px;
+		/* clip-path: inset(5% 0 0px 40%); */
+	}
+	.homePage {
+		height: 100%;
+	}
+}
+@media screen and (max-width: 455px) {
 	.homeHeroContent h1 {
 		font-size: 65px;
 	}
