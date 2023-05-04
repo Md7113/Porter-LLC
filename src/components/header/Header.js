@@ -1,26 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from './Navbar';
-import logo from '../../images/logo_porter_black.svg';
-// import logoVideo from '../../images/Porter-logo-unscreen.png';
-import logoVideo from '../../images/Porter-logo.mp4';
+import logo from '../../images/Porter_logo.gif';
 import '../../css/header/Header.css';
 
 function Header() {
 	const [dropDown, setDropdown] = useState(false);
 	const [activeState, setActiveState] = useState('');
-	const [endVideo, setEndVideo] = useState('logoVid');
-	const [showLogo, setShowLogo] = useState('displayNone');
-
-	// const handleVideoEnd = () => {
-	// 	if (endVideo === 'logoVid') {
-	// 		setEndVideo('displayNone');
-	// 		setShowLogo('logoImg');
-	// 	} else {
-	// 		setEndVideo('logoVid');
-	// 		setShowLogo('displayNone');
-	// 	}
-	// };
 
 	const handleDropDown = () => {
 		setDropdown((dropDown) => !dropDown);
@@ -33,20 +19,7 @@ function Header() {
 	return (
 		<header className="headerContainer">
 			<Link to="/" className="logoLink">
-				<div className={`${endVideo}`}>
-					<video
-						src={logoVideo}
-						// onEnded={handleVideoEnd}
-						autoPlay
-						muted
-						preload="auto"
-					/>
-					{/* <img
-						src={logoVideo}
-						
-					/> */}
-				</div>
-				<img className={`${showLogo}`} src={logo} alt="Porter logo" />
+					<img className="logoVid" src={logo} alt="Porter logo" />
 			</Link>
 			<nav className="navContainer">
 				<ul className="navbarNav">
