@@ -11,20 +11,16 @@ import Projects from './pages/AllProjects';
 import Services from './pages/Services';
 
 function App() {
-	const [currentProject, setCurrentProject] = useState({});
-	const handleCurrentProject = (project) => setCurrentProject(project);
-
 	const [currentTeam, setCurrentTeam] = useState({});
 	const handleCurrentTeam = (Team_handle) => setCurrentTeam(Team_handle);
 
 	return (
 		<Router>
 			<Header />
-			{/* <Navbar /> */}
 			<Routes>
 				<Route
 					path="/"
-					element={<Home handleCurrentProject={handleCurrentProject} />}
+					element={<Home />}
 				/>
 				<Route path="/about" element={<About />} />
 				<Route 
@@ -33,13 +29,13 @@ function App() {
 					/>
 				<Route
 					path="/projects"
-					element={<Projects handleCurrentProject={handleCurrentProject} />}
+					element={<Projects />}
 				/>
 				<Route path="/services" element={<Services />} />
 				<Route path="/contact" element={<Contact />} />
 				<Route
-					path="/project"
-					element={<Project currentProject={currentProject} />}
+					path="/project/:id"
+					element={<Project />}
 				/>
 				<Route
 					path="/Bio"

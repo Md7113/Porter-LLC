@@ -1,14 +1,9 @@
 import React from 'react';
 import '../css/components/Carousel.css';
 import arrow from '../images/rightArrow.svg';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-function CarouselCard({ project, handleCurrentProject }) {
-	const navigate = useNavigate();
-	function handleProjectSave() {
-		handleCurrentProject(project);
-		navigate('/project', { state: { currentProject: { project } } });
-	}
+function CarouselCard({project}) {
 	const pattern =/(^(?:\S+\s+\n?){1,10})/;
 	return (
 		<div className="carouselProjectCard">
@@ -22,7 +17,7 @@ function CarouselCard({ project, handleCurrentProject }) {
 				{(project.description.match(pattern) + "...")}
 			</p>
 			<hr className="LowerLineBreak"></hr>
-			<div className="projectLink" onClick={handleProjectSave}>
+			<Link className="projectLink" to={`project/${project.id}`}>
 				<div className="carouselPadding">
 					<img src={project.img} alt={project.alt}/>
 				</div>
@@ -30,7 +25,7 @@ function CarouselCard({ project, handleCurrentProject }) {
 					<span>VIEW PROJECT</span>
 					<img className="arrowLink" src={arrow} alt="right arrow" />
 				</div>
-			</div>
+			</Link>
 			<hr className="LowerLineBreak"></hr>
 		</div>
 	);

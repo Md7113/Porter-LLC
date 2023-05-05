@@ -11,3 +11,11 @@ export function checkPhoneNumber(input) {
 	}
 	return false;
 }
+
+export function retrieveObjFromId(id, arr) {
+	for(const element of arr) {
+		if(element.id === Number(id)){
+			return element;
+		}
+	}
+}

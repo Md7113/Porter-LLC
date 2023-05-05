@@ -7,7 +7,7 @@ import rightArrow from '../images/rightArrow.svg';
 import leftArrow from '../images/leftArrow.svg';
 
 let projects = projectFile();
-export default function MultiCarousel({ handleCurrentProject }) {
+export default function MultiCarousel() {
 	const responsive = {
 		desktop: {
 			breakpoint: { max: 4000, min: 1024 },
@@ -21,7 +21,7 @@ export default function MultiCarousel({ handleCurrentProject }) {
 
 	projects = projects.filter((project) => project.carousel);
 
-	const CustomButtonGroupAsArrows = ({ next, previous }) => {
+	const CustomButtonGroupAsArrows = ({next, previous}) => {
 		return (
 			<div className="carouselArrows">
 				<img
@@ -55,9 +55,8 @@ export default function MultiCarousel({ handleCurrentProject }) {
 				renderButtonGroupOutside={true}
 				customButtonGroup={<CustomButtonGroupAsArrows />}
 			>
-				{projects.map((project, index) => (
+				{projects.map((project) => (
 					<ProjectCard
-						handleCurrentProject={handleCurrentProject}
 						key="project.id"
 						project={project}
 					/>

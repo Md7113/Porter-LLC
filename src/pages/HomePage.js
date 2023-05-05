@@ -5,7 +5,7 @@ import '../css/components/Carousel.css';
 import HomeSections from '../components/home/HomeSections';
 import homeHero from '../images/Porter_LinkedIn_Cover_Black.png';
 
-const HomePage = ({ handleCurrentProject }) => {
+const HomePage = () => {
 	return (
 		<>
 			<div className="homePage">
@@ -18,7 +18,7 @@ const HomePage = ({ handleCurrentProject }) => {
 					<div className="homeHeroContent">
 						<h1>BUILD A LEGACY</h1>
 						<div className="carouselContainer">
-							<Carousel handleCurrentProject={handleCurrentProject} />
+							<Carousel  />
 						</div>
 					</div>
 				</div>
@@ -34,7 +34,7 @@ const HomePage = ({ handleCurrentProject }) => {
 				</svg>
 			</div>
 			<div className="carouselPhone">
-				<Carousel handleCurrentProject={handleCurrentProject} />
+				<Carousel />
 			</div>
 			<HomeSections />
 		</>

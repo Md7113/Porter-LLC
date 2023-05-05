@@ -1,7 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../../css/pages/Project.css';
+import projectFile from '../../utils/projectFile';
+import { retrieveObjFromId } from '../../utils/helpers';
 
-export default function Project({ currentProject }) {
+export default function Project() {
+	const [project, setProject] = useState('');
+
+	if (!project) {
+		const projects = projectFile();
+		let id = window.location.href.split('/').pop();
+		setProject(retrieveObjFromId(id, projects));
+	}
 
 	return (
 		<section className="projectSection">
@@ -10,26 +19,30 @@ export default function Project({ currentProject }) {
 				<div className="projectContent">
 					<div className="projectTitleContent">
 						<h2 className="projectNameSection">
-							{currentProject.businessName}
+							{project.businessName}
 						</h2>
 						<hr />
-						
+
 						<p className="projectDetails projectDescriptionSection ">
-							{currentProject.description}
+							{project.description}
 						</p>
 					</div>
 					<p>
-						
-					<p className="projectDetails"><span>Location:</span> {currentProject.location}</p>
+						<p className="projectDetails">
+							<span>Location:</span> {project.location}
+						</p>
 						<div className="projectDetails">
 							<span>Size: </span>
-							{currentProject.size} SF
+							{project.size} SF
 						</div>
-					
 					</p>
 				</div>
 				<div className="projectImgContainer">
-					<img className="projectMainImg" src={currentProject.img} alt="Placeholder" />
+					<img
+						className="projectMainImg"
+						src={project.img}
+						alt="Placeholder"
+					/>
 				</div>
 			</div>
 		</section>
