@@ -1,10 +1,7 @@
 .carousel {
 	position: absolute;
 	width: max(579px, 30%);
-	/* margin-top: 10%; */
-	/* width: 30%; */
 	line-height: 25px;
-	/* bottom: 0%; */
 }
 .carouselArrows {
 	position: absolute;
@@ -93,6 +90,11 @@
     .carousel {
 		position: static;
 		width: 100%;
-		
+	}
+	.projectName {
+		font-size: 19px;
+	}
+	.projectLocation {
+		margin-left: 20px;
 	}
 }
