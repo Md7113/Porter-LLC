@@ -1,7 +1,7 @@
 const homeInfo = () => {
     let homeInformation = [
         {
-            section1: ['We strive for excellence in everything we do and our unmatched decades of experience are brought to bear on every program we manage. Let\’s build a world on purpose.'],
+            section1: ['We strive for excellence in everything we do and our unmatched decades of experience are brought to bear on every program we manage. Let\'s build a world on purpose.'],
             section2: ['2006', 'Established'],
             section3: ['300+', 'Projects Completed']
         },

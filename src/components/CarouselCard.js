@@ -24,7 +24,7 @@ function CarouselCard({ project, handleCurrentProject }) {
 			<hr className="LowerLineBreak"></hr>
 			<div className="projectLink" onClick={handleProjectSave}>
 				<div className="carouselPadding">
-					<img src={project.img} />
+					<img src={project.img} alt={project.alt}/>
 				</div>
 				<div className="projectLink arrow">
 					<span>VIEW PROJECT</span>
