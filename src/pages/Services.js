@@ -8,7 +8,7 @@ const Services = () => {
 	const services = serviceList();
 	return (
 		<div className="servicesContainer">
-			<h2>Services</h2>
+			<h2>SERVICES</h2>
 			<hr />
 			<div className="allServices">
 				{services.map((service) => (

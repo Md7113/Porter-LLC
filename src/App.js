@@ -9,6 +9,7 @@ import Team from './pages/OurTeam';
 import Contact from './pages/Contact';
 import Projects from './pages/AllProjects';
 import Services from './pages/Services';
+import Footer from './components/Footer';
 
 function App() {
 	const [currentTeam, setCurrentTeam] = useState({});
@@ -43,6 +44,7 @@ function App() {
 				/>
 				<Route render={() => <h1 className="display-2">Wrong page!</h1>} />
 			</Routes>
+			<Footer />
 		</Router>
 	);
 }

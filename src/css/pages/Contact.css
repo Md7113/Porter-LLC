@@ -7,10 +7,11 @@
 }
 .contactMe h2 {
 	color: var(--porter_black);
-	font-size: 65px;
+	font:var(--title_font);
+	font-size: 75px;
 	border-top: 8px solid var(--porter_black);
 	margin: 0 5% 20px;
-	font-weight: 700;
+	font-weight: 900;
 	padding-top: 20px;
 }
 .contactMe hr{
@@ -53,7 +54,6 @@
 .inputTextArea:focus {
 	outline: 2px solid var(--red_orange);
 }
-
 .contactBox button {
 	display: block;
 	padding: 10px 40px;
@@ -68,35 +68,17 @@
 }
 .imgContactInfoContainer {
 	width: 30%;
-	/* padding-right:5%; */
-	/* margin-right: 5%; */
 }
 .imgContactInfoContainer img {
 	margin-top: 20px;
 	width: 100%;
-}
-.businessContactInfo{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-.businessContactInfo div {
-	margin: 10px;
-	font-size: 18px;
-	width: 250px;
-}
-.businessContactInfo span {
-	font-weight: 900;
-	color: var(--porter_black);
 }
 .contactErrorMessage {
 	margin: 20px;
 	font-size: 20px;
 	color: var(--red_orange);
 }
-.aTag {
-	color: var(--red_orange);
-}
+
 @media screen and (max-width: 1800px){
 	.contactMe {
 		height: 100%;

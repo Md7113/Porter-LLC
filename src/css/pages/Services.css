@@ -11,10 +11,12 @@
 }
 .servicesContainer h2 {
 	color: var(--ebb_white);
-	font-size: 65px;
+    font: var(--title_font);
+    font-size: 75px;
 	border-top: 8px solid var(--red_orange);
 	margin: 20px 5%;
 	padding-top: 20px;
+    font-weight: 900;
 }
 .allServices {
 	display: flex;
@@ -38,10 +40,12 @@
     margin: 20px;
     padding-bottom: 10px;
     font-weight: 700;
-    border-bottom: 3px solid var(--red_orange)
+    /* border-bottom: 3px solid var(--red_orange); */
 }
 .serviceDescription{
+    border-top: 3px solid var(--red_orange);
     color: var(--ebb_white);
     line-height: 30px;
     font-size: 20px;
+    padding-top: 10px;
 }

@@ -15,15 +15,15 @@ const AllProjects = ({ handleCurrentProject }) => {
 				{projects.map((project) => (
 					<Slide bottom key={project.id}>
 						<Link to={`/project/${project.id}`}>
-							<div
-								className="imageCard"
-							>
+							<div className="imageCard">
 								<img
 									className="projectImg"
 									src={project.img}
 									alt={project.alt}
 								/>
-								<p className="projectTitle">{project.businessName}</p>
+								<div className="projectTitleContainer">
+									<p className="projectTitle">{project.businessName}</p>
+								</div>
 							</div>
 						</Link>
 					</Slide>

@@ -15,7 +15,7 @@
   --sun_yellow: #ffc943;
   /* Fonts */
   --title_font: 'Gilroy_Black';
-  --text_font:'Crimson' ;
+  --text_font:'Proxima Nova Medium' ;
 }
 html {
   height: 100%;
@@ -24,7 +24,7 @@ html {
 body {
   min-height: 100%;
   line-height: 1;
-  font-family: 'Crimson', sans-serif; 
+  font-family: 'Proxima Nova Medium', Medium'Crimson', sans-serif; 
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,11 +43,6 @@ ol, ul {
 
 a{
   text-decoration: none;
-}
-
-.title1 {
-  font-family: var(--title_font); 
-  text-transform: uppercase;
 }
 
 @font-face {

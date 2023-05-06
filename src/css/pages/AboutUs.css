@@ -6,8 +6,9 @@
 
 .aboutUsPage h2 {
 	color: var(--porter_black);
-	font-size: 65px;
-	font-weight: 700;
+	font:var(--title_font);
+	font-size: 75px;
+	font-weight: 900;
 	border-top: 8px solid var(--porter_black);
 	margin: 20px 0;
 	padding-top: 20px;

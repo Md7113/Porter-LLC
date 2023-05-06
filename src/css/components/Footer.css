@@ -1,0 +1,21 @@
+.businessContactInfo{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+    background-color: var(--porter_black);
+	padding:10px;
+}
+.businessContactInfo div {
+	margin: 10px;
+	font-size: 18px;
+	width: 250px;
+    color: var(--ebb_white);
+}
+.businessContactInfo span {
+	font-weight: 900;
+	color: var(--ebb_white);
+}
+
+.aTag{
+	padding-right: 20px;
+}
