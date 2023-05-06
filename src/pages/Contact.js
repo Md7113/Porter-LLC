@@ -241,7 +241,7 @@ export default function Contact() {
 					</button>
 				</form>
 				<div className="imgContactInfoContainer">
-					<img src={contactImg} alt="" />
+					<img src={contactImg} alt="A persons hands typing on a computer in front of a light colored background a with a plant just off to the right. The plant is a green succulent and white vase" />
 					
 				</div>
 			</div>

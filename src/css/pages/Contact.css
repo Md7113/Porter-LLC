@@ -1,9 +1,9 @@
 .contactMe {
 	width: 100vw;
-	height: calc(100vh - 128px);
+	/* height: calc(100vh - 128px); */
 	/* height: 100%; */
 	background-color: var(--ebb_white);
-	padding-top: 40px;
+	padding: 40px 0;
 }
 .contactMe h2 {
 	color: var(--porter_black);
@@ -68,9 +68,9 @@
 }
 .imgContactInfoContainer {
 	width: 30%;
+	margin: auto;
 }
 .imgContactInfoContainer img {
-	margin-top: 20px;
 	width: 100%;
 }
 .contactErrorMessage {
