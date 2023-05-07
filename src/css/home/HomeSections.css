@@ -1,18 +1,17 @@
 .introTitle {
     font-family: var(--title_font);
     padding: 30px 0;
-    /* margin: 60px 5% 0; */
     font-size: 80px;
     border-top: 8px solid var(--porter_black);
     border-bottom: 5px solid var(--porter_black);
 }
 
-.homeContentContainer{
+.homeSectionsContainer{
     background-color: var(--ebb_white);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 5%;
+    padding: 50px 5%;
 }
 
 @media screen and (max-width: 1581px) {

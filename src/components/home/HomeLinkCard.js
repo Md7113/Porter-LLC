@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import '../../css/home/HomeLinkCard.css';
 
 const HomeTextLinkCard = (props) => {
 	let classes = 'textLinkFormat ' + props.className;

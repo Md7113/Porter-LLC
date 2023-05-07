@@ -1,7 +1,6 @@
 .aboutUsPage {
 	background-color: var(--ebb_white);
-	padding: min(20px, 2%) 5%;
-	width: 100%;
+	padding: 50px 5%;
 }
 
 .aboutUsPage h2 {
@@ -10,13 +9,14 @@
 	font-size: 75px;
 	font-weight: 900;
 	border-top: 8px solid var(--porter_black);
-	margin: 20px 0;
+	margin-bottom: 20px;
 	padding-top: 20px;
 }
 .aboutUsPage hr {
     width: 60%;
     color: var(--porter_black);
     height: 5px;
+	margin-bottom:20px;
     background-color: var(--porter_black);
 }
 .aboutContainer {

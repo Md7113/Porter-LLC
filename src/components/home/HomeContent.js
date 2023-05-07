@@ -1,8 +1,8 @@
 import React from 'react';
 import homeInfo from '../../utils/homeContent';
-import CardContainer from './CardsContainer';
-import TextLink from './HomeTextLinkCard';
+import LinkCard from './HomeLinkCard';
 import InfoCard from './HomeInfoCard';
+import '../../css/home/HomeContent.css';
 import Fade from 'react-reveal/Fade';
 
 const HomeContent = () => {
@@ -11,45 +11,46 @@ const HomeContent = () => {
 	const line2 = homeContent[1];
 
 	return (
-		<section className="displayRows">
+		<section className=''>
 			<Fade bottom>
-				<CardContainer className="borderTop cardPadding">
-					<div className="lineSpacing">{line1.section1}</div>
+				<div className="cardInfoRow">
+					<div className="firstCard">{line1.section1}</div>
 					<InfoCard
-						className="fontTitle"
+						className="infoCard"
 						title={line1.section2[0]}
 						content={line1.section2[1]}
 					/>
 					<InfoCard
-						className="fontTitle"
+						className="infoCard"
 						title={line1.section3[0]}
 						content={line1.section3[1]}
 					/>
-				</CardContainer>
+				</div>
 				<hr className="hr" />
-				<CardContainer className="cardPadding cardHeight">
-					<TextLink
-						className="lineSpacing"
+				<div className="cardLinkRow">
+					<LinkCard
+						className=""
 						title={line2.section1[0]}
 						content={line2.section1[1]}
 						linkContent={line2.section1[2]}
 					/>
-					<TextLink
-						className="lineSpacing"
+					<LinkCard
+						className=""
 						title={line2.section2[0]}
 						content={line2.section2[1]}
 						linkContent={line2.section2[2]}
 					/>
-					<TextLink
-						className="lineSpacing contrastCard"
+					<LinkCard
+						className="contrastCard"
 						title={line2.section3[0]}
 						content={line2.section3[1]}
 						linkContent={line2.section3[2]}
 					/>
-				</CardContainer>
+				</div>
 			</Fade>
 		</section>
 	);
 };
 
 export default HomeContent;
+

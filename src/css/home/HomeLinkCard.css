@@ -11,20 +11,24 @@
     flex-direction: column;
     justify-self: flex-end;
     align-content: center;
+    font-size: 20px;
+    line-height: 25px;
 }
 .textLinkFormat h3{
     font-weight: 900;
-    font-size: 25px;
-    padding-bottom: 30px;
+    font-size: 34px;
+    line-height: 36px;
+    padding: 0 50px 30px 0;
 }
 .textLinkFormat p{
-    padding-bottom: 40px;
+    padding: 0 60px 40px 0;
     height: 265px;
     min-width: 360px;
 }
 
 .textLinkFormat span{
-    font-weight: 700;
+    font-weight: 900;
+    font-size: 22px;
     color: var(--red_orange);
 }
 .textLinkFormat span:hover{
@@ -32,7 +36,7 @@
 }
 .contrastCard > span{
     color: var(--porter_black);
-    font-size: 17px;
+    font-size: 22px;
 }
 .contrastCard > span:hover{
     color: var(--ebb_white);
@@ -42,16 +46,25 @@
 }
 
 @media screen and (max-width: 1190px) {
+    .textLinkFormat {
+        margin-top: 30px;
+    }
     .textLinkFormat h3{
         text-decoration-line: underline ;
+        
     }
-}
-@media screen and (max-width: 410px) {
     .textLinkFormat p{
         min-width: 0px;
+        width: 100%;
         height: 100%;
     }
-    .contrastCard p{
-        height: 100%;
+    .contrastCard {
+        padding: 20px;
     }
+    /* .contrastCard h3{
+        padding: 20px;
+    }
+    .contrastCard span{
+        padding: 15px;
+    } */
 }

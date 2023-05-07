@@ -1,5 +1,4 @@
-import React from 'react'
-import '../../css/home/HomeInfoCard.css';
+import React from 'react';
 
 const HomeInfoCard = (props) => {
     let classes = ' ' + props.className;

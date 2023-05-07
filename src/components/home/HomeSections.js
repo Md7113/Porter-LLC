@@ -4,7 +4,7 @@ import '../../css/home/HomeSections.css'
 
 const HomeSections = () => {
     return (
-        <div className= 'homeContentContainer'>
+        <div className= 'homeSectionsContainer'>
             <h2 className="introTitle">BUILDING A DIFFERENCE</h2>
             <HomeContent />
         </div>
