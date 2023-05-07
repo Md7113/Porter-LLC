@@ -1,12 +1,12 @@
 .servicesContainer {
-    padding: min(30px, 5%);
+    padding: 50px 5%;
     background-color: var(--porter_black);
 }
 .servicesContainer hr {
-	width: 65%;
+	width: 60%;
     color: var(--red_orange);
     height: 5px;
-    margin-left: 5%;
+    margin-bottom:20px;
     background-color: var(--red_orange);
 }
 .servicesContainer h2 {
@@ -14,13 +14,13 @@
     font: var(--title_font);
     font-size: 75px;
 	border-top: 8px solid var(--red_orange);
-	margin: 20px 5%;
+	margin: 20px 0;
 	padding-top: 20px;
     font-weight: 900;
 }
 .allServices {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
     flex-flow: row wrap;
 	background-color: var(--porter_black);
     align-content: space-around;
@@ -36,16 +36,26 @@
 }
 .serviceTitle {
     color: var(--ebb_white);
-    font-size: 32px;
-    margin: 20px;
+    font-size: 34px;
+    height: 74px;
+    margin-bottom: 10px;
     padding-bottom: 10px;
     font-weight: 700;
-    /* border-bottom: 3px solid var(--red_orange); */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .serviceDescription{
     border-top: 3px solid var(--red_orange);
     color: var(--ebb_white);
     line-height: 30px;
-    font-size: 20px;
+    font-size: 22px;
     padding-top: 10px;
+}
+
+@media screen and (max-width:465px){
+    .servicesContainer h2 {
+        font-size: 45px;
+    }
 }

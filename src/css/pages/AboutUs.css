@@ -6,7 +6,7 @@
 
 .aboutUsPage h2 {
 	color: var(--porter_black);
-	font:var(--title_font);
+	font-family: var(--title_font);
 	font-size: 75px;
 	font-weight: 900;
 	border-top: 8px solid var(--porter_black);
@@ -14,13 +14,13 @@
 	padding-top: 20px;
 }
 .aboutUsPage hr {
-    width: 65%;
+    width: 60%;
     color: var(--porter_black);
     height: 5px;
     background-color: var(--porter_black);
 }
 .aboutContainer {
-	font-family: var(--text_font);
+	/* font-family: var(--text_font); */
 	padding-top: 30px;
 	line-height: 30px;
 	font-size: 20px;
@@ -47,4 +47,9 @@
 	.aboutContent {
 		order: 2;
 	}
+}
+@media screen and (max-width:465px){
+    .aboutUsPage h2 {
+        font-size: 45px;
+    }
 }

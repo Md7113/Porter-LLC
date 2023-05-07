@@ -37,7 +37,7 @@
 .navLink {
 	color: var(--ebb_white);
 	margin: 0px 10px;
-	font-size: 24px;
+	font-size: 28px;
 }
 .navLink:hover {
 	color: var(--red_orange);
@@ -69,6 +69,7 @@
 	}
 	.hamburger {
 		display: block;
+		margin-top: 25px;
 	}
 	.hamburger.active .bar:nth-child(2) {
 		opacity: 0;

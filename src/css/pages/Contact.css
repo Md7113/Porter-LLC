@@ -1,25 +1,22 @@
 .contactMe {
-	width: 100vw;
-	/* height: calc(100vh - 128px); */
-	/* height: 100%; */
+	height: calc(100vh - 225px); 
 	background-color: var(--ebb_white);
-	padding: 40px 0;
+	padding: 50px 5%;
 }
 .contactMe h2 {
 	color: var(--porter_black);
-	font:var(--title_font);
+	font-family: var(--title_font);
 	font-size: 75px;
 	border-top: 8px solid var(--porter_black);
-	margin: 0 5% 20px;
 	font-weight: 900;
 	padding-top: 20px;
+	margin-bottom: 20px;
 }
 .contactMe hr{
 	width: 60%;
     color: var(--porter_black);
     height: 5px;
     background-color: var(--porter_black);
-	margin-left: 5%;
 }
 .contactMeContainer {
 	display: flex;
@@ -27,8 +24,7 @@
 }
 .contactBox {
 	width: 60%;
-	margin: 0 40px 0 5%;
-	padding-top: 40px;
+	padding-top: 20px;
 }
 .contactBox div {
 	display: flex;
@@ -37,9 +33,10 @@
 }
 .input {
 	background-color: white;
-	padding: 20px;
+	padding: 10px;
 	margin: 20px;
 	width: 40%;
+	font-size: 20px;
 }
 .input:focus {
 	outline: 2px solid var(--red_orange);
@@ -50,6 +47,7 @@
 	margin: 20px 86px;
 	height: 100px;
 	padding: 20px;
+	font-size: 20px;
 }
 .inputTextArea:focus {
 	outline: 2px solid var(--red_orange);
@@ -58,6 +56,8 @@
 	display: block;
 	padding: 10px 40px;
 	margin: 0 auto;
+	font-size: 22px;
+	font-weight: 700;
 	background-color: var(--porter_black);
 	color: var(--red_orange);
 	border-radius: 5px;
@@ -67,7 +67,7 @@
 	color: var(--porter_black);
 }
 .imgContactInfoContainer {
-	width: 30%;
+	width: 35%;
 	margin: auto;
 }
 .imgContactInfoContainer img {
@@ -103,7 +103,6 @@
 	min-width: 300px;
 	max-width: 1600px;
 	display: flex;
-	background-color: var(--porter_black);
 	flex-direction: column;
 	justify-content: center;
 	padding: 30px;
@@ -133,6 +132,9 @@
 	.inputTextArea {
 		width: 90%;
 		margin: 20px;
+	}
+	.contactMe h2 {
+		font-size: 45px;
 	}
 }
 @media screen and (max-width: 445px){
