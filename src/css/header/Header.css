@@ -58,13 +58,11 @@
 
 @media screen and (max-width: 971px) {
 	.logoImg {
-		/* padding-left: 40px; */
 		padding-top: 30px;
 		padding: 5px 0;
 	}
 	.navContainer {
 		margin: auto 5%;
-		/* padding-top:10px ; */
 		background-color: var(--porter_black);
 	}
 	.hamburger {
@@ -91,14 +89,16 @@
 		margin-top: 15px;
 		flex-direction: column;
 		text-align: center;
+		border: solid 1px var(--ebb_white);
+		background-color: var(--porter_black);
 	}
 	.navbarDropdown a {
-		margin: 3px;
+		/* margin: 3px; */
 		font-size: 25px;
-		border-radius: 5px;
+		/* border-radius: 5px; */
 		padding: 15px 25px;
 		background-color: var(--porter_black);
-		border: solid 1px var(--ebb_white);
+		/* border: solid 1px var(--ebb_white); */
 	}
 }
 @media screen and (max-width: 500px) {
