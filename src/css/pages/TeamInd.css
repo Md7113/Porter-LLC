@@ -1,5 +1,5 @@
 .Team_Title{
     font-size: 25px;
     color: var(--porter_black);
-    font-family: var(--text_font);
+    font-family: var(--title_font);
 }

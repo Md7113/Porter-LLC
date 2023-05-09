@@ -10,10 +10,12 @@
     font-size: 65px;
     border-top: 8px solid var(--porter_black);
     margin-bottom: 20px;
+    font-family: var(--title_font);
 }
 
 .allTeam {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .Team_img{   
@@ -28,6 +30,7 @@
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 50px;
+    display: flex;
 }
 
 .Team_Name{

@@ -19,7 +19,7 @@ const Our_Team_Page = ({ handleCurrentTeam }) => {
 
 	return (
 		<div className="allTeamContainer">
-			<h1>Our Team</h1>
+			<h1>OUR TEAM</h1>
 			<hr />
 			<div className="allTeam">
 				{Team.map((member) => (
