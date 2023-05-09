@@ -24,7 +24,7 @@
 }
 
 .homeHeroContent h1 {
-	padding-top: min(1%, 30px);
+	padding-top:1%;
 	font-size: 180px;
 	font-weight: 700;
 	font-family: var(--title_font);
@@ -55,6 +55,7 @@
 @media screen and (max-width: 1581px) {
 	.homeHeroContent h1 {
 		font-size: 100px;
+		padding-top:30px;
 	}
 }
 @media screen and (max-width: 1675px) {

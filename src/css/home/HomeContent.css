@@ -1,0 +1,62 @@
+/* This is the CSS for the first Row */
+
+.cardInfoRow{
+    display: flex;
+    justify-content: space-evenly; 
+    flex-wrap: wrap;
+    padding: 30px 0 15px;
+    margin-bottom: 30px;
+}
+.cardInfoRow div {
+    width: 33%;
+    min-width: 365px;
+}
+.firstCard {
+    font-size: 20px;
+    line-height: 25px;
+    padding-right:100px ;
+}
+.infoCard h3 {
+	font-size: 65px;
+	padding-bottom: 10px;
+}
+
+.infoCard p {
+	font-size: 34px;
+    font-weight: 600;
+}
+
+/* CSS for the second row*/
+.cardLinkRow {
+    display: flex;
+    justify-content: space-evenly; 
+    flex-wrap: wrap;
+    padding: 30px 0 15px;
+}
+
+.cardLinkRow div {
+    width: 33%;
+    min-width: 365px;
+}
+
+.hr {
+    margin-right: 36%;
+}
+
+@media screen and (max-width: 1215px) {
+    .infoCard{
+        margin: 30px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .cardInfoRow div {
+        min-width: 90%;
+    }
+    .cardLinkRow div {
+        min-width: 90%;
+    }
+    .hr {
+        margin-right: 0;
+    }
+}

@@ -19,3 +19,8 @@ export function retrieveObjFromId(id, arr) {
 		}
 	}
 }
+
+export function descriptionShort(str){
+	const pattern = /(^(?:\S+\s+\n?){1,20})/;
+	return str.match(pattern)[0] + "...";
+}

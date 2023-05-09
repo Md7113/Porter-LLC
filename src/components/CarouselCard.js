@@ -1,11 +1,10 @@
 import React from 'react';
 import '../css/components/Carousel.css';
 import arrow from '../images/rightArrow.svg';
+import { descriptionShort } from '../utils/helpers';
 import { Link } from 'react-router-dom';
 
 function CarouselCard({project}) {
-	const pattern =/(^(?:\S+\s+\n?){1,20})/;
-	console.log(project.description.match(pattern))
 	return (
 		<div className="carouselProjectCard">
 			<hr className="headLineBreak" />
@@ -15,7 +14,7 @@ function CarouselCard({project}) {
 			</div>
 			<hr className="LowerLineBreak "></hr>
 			<p className="carouselPadding projectDescription">
-				{(project.description.match(pattern)[0] + "...")}
+				{(descriptionShort(project.description))}
 			</p>
 			<hr className="LowerLineBreak"></hr>
 			<Link className="projectLink" to={`project/${project.id}`}>
