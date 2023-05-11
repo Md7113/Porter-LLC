@@ -19,7 +19,7 @@ const Our_Team_Page = ({ handleCurrentTeam }) => {
 
 	return (
 		<div className="allTeamContainer">
-			<h1>Our Team</h1>
+			<h1>OUR TEAM</h1>
 			<hr />
 			<div className="allTeam">
 				{Team.map((member) => (
@@ -31,7 +31,7 @@ const Our_Team_Page = ({ handleCurrentTeam }) => {
 							<img className="Team_img" src={member.Img_Color} alt={member.alt} />
 							<h3 className="Team_Name">{member.Name}</h3>
                             <h3 className="Team_Title">{member.Title}</h3>
-                            <h3 className="teamBioLink">Read Bio</h3>
+                            {/* <h3 className="teamBioLink">Read Bio</h3> */}
 						</div>
 					</Slide>
 				))}
