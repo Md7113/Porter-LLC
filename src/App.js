@@ -12,9 +12,7 @@ import Services from './pages/Services';
 import Footer from './components/Footer';
 
 function App() {
-	const [currentTeam, setCurrentTeam] = useState({});
-	const handleCurrentTeam = (Team_handle) => setCurrentTeam(Team_handle);
-
+	
 	return (
 		<Router>
 			<Header />
@@ -26,7 +24,11 @@ function App() {
 				<Route path="/about" element={<About />} />
 				<Route 
 					path="/team" 
-					element={<Team handleCurrentTeam={handleCurrentTeam}/>} 
+					element={<Team />} 
+					/>
+				<Route 
+					path="/team/:id" 
+					element={<Team_handle />} 
 					/>
 				<Route
 					path="/projects"
@@ -36,11 +38,7 @@ function App() {
 				<Route path="/contact" element={<Contact />} />
 				<Route
 					path="/project/:id"
-					element={<Project />}
-				/>
-				<Route
-					path="/Bio"
-					element={<Team_handle currentTeam={currentTeam} />}
+					element={<Project />} 
 				/>
 				<Route render={() => <h1 className="display-2">Wrong page!</h1>} />
 			</Routes>

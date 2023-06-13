@@ -1,21 +1,16 @@
 import React from 'react';
 import '../css/pages/OurTeam.css';
 import teamFile from '../utils/team'
+import { Link } from 'react-router-dom';
 import Slide from 'react-reveal/Slide';
-import { useNavigate } from 'react-router-dom';
+
 
 const Our_Team_Page = ({ handleCurrentTeam }) => {
 	// returns an array of team members
 	let Team = teamFile();
 
 	//
-	const navigate = useNavigate();
-
-	// Redirects to the current team page
-	function handleTeamNavigate(Team) {
-		handleCurrentTeam(Team);
-		navigate('/Bio', { state: { currentTeam: { Team } } });
-	}
+	
 
 	return (
 		<div className="allTeamContainer">
@@ -24,15 +19,14 @@ const Our_Team_Page = ({ handleCurrentTeam }) => {
 			<div className="allTeam">
 				{Team.map((member) => (
 					<Slide bottom key={member.id}>
-						<div
-							className="imageCard"
-							onClick={() => handleTeamNavigate(member)}
-						>
-							<img className="Team_img" src={member.Img_Color} alt={member.alt} />
-							<h3 className="Team_Name">{member.Name}</h3>
-                            <h3 className="Team_Title">{member.Title}</h3>
-                            {/* <h3 className="teamBioLink">Read Bio</h3> */}
-						</div>
+						<Link to={`/team/${member.id}`}>
+							<div className="imageCard">
+								<img className="Team_img" src={member.Img_Color} alt={member.alt} />
+								<h3 className="Team_Name">{member.Name}</h3>
+								<h3 className="Team_Title">{member.Title}</h3>
+								{/* <h3 className="teamBioLink">Read Bio</h3> */}
+							</div>
+						</Link>
 					</Slide>
 				))}
 			</div>

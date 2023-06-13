@@ -2,16 +2,17 @@ import React, {useState} from 'react';
 import '../../css/pages/Project.css';
 import projectFile from '../../utils/projectFile';
 import { retrieveObjFromId } from '../../utils/helpers';
+import { useParams } from 'react-router-dom';
 
 export default function Project() {
 	const [project, setProject] = useState('');
+	let {id} = useParams();
 
 	if (!project) {
 		const projects = projectFile();
-		let id = window.location.href.split('/').pop();
 		setProject(retrieveObjFromId(id, projects));
 	}
-
+	
 	return (
 		<section className="projectSection">
 			<hr />
