@@ -21,7 +21,7 @@ const Our_Team_Page = ({ handleCurrentTeam }) => {
 					<Slide bottom key={member.id}>
 						<Link to={`/team/${member.id}`}>
 							<div className="imageCard">
-								<img className="Team_img" src={member.Img_Color} alt={member.alt} />
+								<img className="Team_img" src={member.Img_Noir} alt={member.alt} />
 								<h3 className="Team_Name">{member.Name}</h3>
 								<h3 className="Team_Title">{member.Title}</h3>
 								{/* <h3 className="teamBioLink">Read Bio</h3> */}

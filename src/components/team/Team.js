@@ -16,7 +16,23 @@ export default function Team() {
 
 	return (
 		<section className="Team_section">
-			<div>{member.Name} </div>
+			<hr/>
+			<div className="memberContainer">
+				<div className="memberImgSection">
+					<img
+						className="memberMainImg"
+						src={member.Img_Color}
+						alt="Placeholder"
+					></img>
+				</div>
+				<div class="memberDescSection">
+					<h2 className="memberName">{member.Name} </h2>
+					<hr/>
+					<p className="memberDescription">
+						{member.Discription}
+					</p>
+				</div>
+			</div>
 		</section>
 	);
 }

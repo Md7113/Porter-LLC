@@ -1,5 +1,87 @@
-.Team_Title{
-    font-size: 25px;
-    color: var(--porter_black);
-    font-family: var(--title_font);
+.Team_Section {
+    background-color: var(--porter_black);
+    color:var(--ebb_white);
+	width: 100vw;
+	height: 100vh;
+}
+.Team_Section hr{
+    color:var(--ebb_white);
+	margin: 0 5%;
+    height: 8px;
+    background-color: var(--ebb_white);
+}
+.Team_Section .memberName hr{
+    color:var(--ebb_white);
+    height: 5px;
+	margin: 5px;
+	width: 100%;
+    background-color: var(--ebb_white);
+}
+
+.memberContainer {
+	display: flex;
+	margin-left: 5%;
+	height: 80vh;
+}
+
+/* business name, location and description */
+.memberDescSection {
+	margin-top: 4%;
+	display: flex;
+	flex-direction: column;
+    /* justify-content: space-between; */
+    padding-bottom: 3%;
+}
+.memberDescSection {
+    display: flex;
+	flex-direction: column;
+}
+.memberDescription{
+    margin: 10px;
+}
+.memberDescription span{
+    margin: 10px;
+	font-weight: 800;
+}
+.memberName{
+    margin: 10px;
+    font-size: 40px;
+}
+.memberDescription{
+    line-height: 25px;
+}
+
+/* images */
+.memberImgSection {
+	display: flex;
+	/* height: 85vh; */
+	margin-right: 5%;
+}
+.memberMainImg {
+	width: 50vw;
+	padding: 30px;
+	object-fit: contain;
+}
+
+
+
+
+@media screen and (max-width: 1260px) {
+	.Team_Section {
+		height: 100%;
+	}
+	.memberContainer {
+		flex-wrap: wrap;
+	}
+	.memberImgSection img{
+		width: 100%;
+		order: 1;
+	}
+	.memberContainer {
+		margin: 0 5%  0 0;
+		order: 2;
+	}
+	.Team_Section hr{
+		width: 95%;
+	}
 }
