@@ -16,6 +16,7 @@
 .allTeam {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .imageCard{
     justify-content: center;
@@ -33,6 +34,7 @@
     margin-right: 10%;
     margin-top: 50px;
     display: flex;
+    justify-content: center;
 }
 
 .Team_Name{

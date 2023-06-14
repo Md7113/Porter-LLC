@@ -15,8 +15,8 @@ export default function Team() {
 
 
 	return (
-		<section className="Team_section">
-			<hr/>
+		<section className="Team_Section">
+			
 			<div className="memberContainer">
 				<div className="memberImgSection">
 					<img
