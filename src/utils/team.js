@@ -65,7 +65,7 @@ const teamList =() => {
             Discription: `
             Eric has been in the construction industry for 15 years and has a breadth and depth of experience in all phases of construction. He possesses a scope of knowledge ranging from design, pre-construction, construction, to project closeout. With an eye for organization and detail, Eric has had success with numerous and varied building types including public and private labs, public buildings, assisted living facilities, multi-use residential buildings, CSU & UC projects, and more.
         `,
-            Title: "Project Manager",
+            Title: "Vice President Bay Area",
             // Img_Color: ,
             Img_Color: eric_noir,
             alt: '',
@@ -81,7 +81,7 @@ const teamList =() => {
             Kori has a variety of project experience that includes healthcare, hospitality, education, assisted living, office building, mixed-use, institutional, and public works projects. While her experience is varied, it has largely been focused on healthcare with projects ranging from the implementation of SPC-4D seismic work, to construction management of ambulatory medical office buildings to PMCM services for the California Northstate University’s $ 1 billion, teaching hospital program.
 
         `,
-            Title: "Project Manager",
+            Title: "Vice President Northern California",
             Img_Color: kori_noir,
             // Img_Noir: tyler_Noir,
             alt: '',
@@ -94,7 +94,7 @@ const teamList =() => {
             Prior to joining Porter Management, Berke developed and sold his own condo development projects. Berke has also worked with UCLA faculty and industry leaders on legislation for streamlining development processes and procedures in Los Angeles. 
 
         `,
-            Title: "Project Manager",
+            Title: "Project Director",
             Img_Color: berke_noir,
             // Img_Noir: tyler_Noir,
             alt: '',
@@ -105,7 +105,7 @@ const teamList =() => {
             Discription: `
             Tim has over 20 years of experience in management. With experience in artist, project, construction, and design management he brings a wealth of varied experience. He has worked on projects in studio, themed entertainment, healthcare, laboratory, university campus, restaurant, and retail. Projects in size and scope that range from completely new lands at theme parks to a restaurant TI. Accelerated schedule, distressed project recovery, and quality control are specialties. Tim understands that projects must be complete/open on time. He approaches his projects with a team mindset. Communication is the key to any successful project, and communication at all levels is Tim’s strength. With a master’s degree in Management, and as a nationally certified soccer coach, he revels in being part diverse teams and forming processes and dynamics that lead to success.
         `,
-            Title: "Project Manager",
+            Title: "Project Director",
             Img_Color: tim_noir,
             // Img_Noir: tyler_Noir,
             alt: '',
@@ -116,7 +116,7 @@ const teamList =() => {
             Discription: `
             Daniel has 19 years of experience in commercial real estate as an executive overseeing operations comprising of acquisition, construction and property management. He is a versatile and entrepreneurial project manager with a proven track record of providing industry expertise and leadership to institutional investors and owners on various assets. Dan has worked on occupied healthcare, medical office buildings, mix-use multi family, assisted living facilities and offices that range in value from $10k to $90 Mil.  His success is accomplished through his abilities to provide expense control strategies, organization, creative and efficient operational/project management as well as strategic relationship building.
         `,
-            Title: "Project Manager",
+            Title: "Senior Project Manager",
             Img_Color: dan_noir,
             // Img_Noir: tyler_Noir,
             alt: '',
@@ -127,7 +127,7 @@ const teamList =() => {
             Discription: `
             Nathan has 36 years of construction experience. His formative professional years were spent building custom homes, followed by commercial projects like parking structures and hospitals. He brings a unique perspective to hospital projects, having been an orderly on the Code team early in his career, and then having remodeled hospitals while still in his tool-carrying years. Extremely well versed in the needs of patients and users within the facility during the actual construction phase, for the past nine years he has managed construction work effectively with all stakeholders as they continue the vital work of diagnosis and treatment. With his understanding of the language of healthcare, construction, and design, he cultivates and inspires confidence in the team as they pursue even the most audacious endeavors.
         `,
-            Title: "Project Manager",
+            Title: "Senior Project Manager",
             Img_Color: chris_color,
             // Img_Noir: tyler_Noir,
             alt: '',
@@ -172,7 +172,7 @@ const teamList =() => {
             Discription: `
             Larry has over 30 years of construction and commercial real estate experience.  Having been an senior executive for two national design-build firms leading teams that were responsible for site selection, securing entitlements, architecture and engineering and construction, Larry has a deep and thorough knowledge of all aspect of project development and project management.  These projects areas included the following vertical markets: Financial, Healthcare and Education.  The projects in these three verticals ranged in project size from $50,000 to $75,000,000.  Those projects have included corporate headquarters, retail installations, critical care facilities, state of the art educational facilities and a myriad of commercial tenant improvement projects. Along with his extensive experience, Larry has a proven track record of representing his client’s needs and fulfilling their budget and schedule expectations.  
         `,
-            Title: "Project Manager",
+            Title: " Senior Project Manager",
             Img_Color: larry_noir,
             // Img_Noir: tyler_Noir,
             alt: '',
@@ -194,7 +194,7 @@ const teamList =() => {
             Discription: `
             Caitlin is new to the Construction Industry and is currently studying Construction Management Technology. She brings a fresh perspective to the projects she assists on and possesses excellent attention to detail. Caitlin is a solutions-oriented team player and enjoys the process of bringing a project to fruition. Seizing the opportunity to gain hands-on experience at Porter Consulting, she enthusiastically supports our Project Managers to keep things running at full steam.  Caitlin functions as Tyler’s right hand and is excited to grow with Porter Consulting.
         `,
-            Title: "Project Manager",
+            Title: "Executive Assistant",
             Img_Color: caitlin_noir,
             // Img_Noir: tyler_Noir,
             alt: '',
