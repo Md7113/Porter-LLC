@@ -16,7 +16,7 @@ export default function Team() {
 
 	return (
 		<section className="Team_Section">
-			
+			{/* <hr/> */}
 			<div className="memberContainer">
 				<div className="memberImgSection">
 					<img
