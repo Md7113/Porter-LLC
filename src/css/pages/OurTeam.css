@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=IBM+Plex+Sans+Arabic:wght@200&display=swap%27');
+
 .allTeamContainer{
     background-color: var(--ebb_white);
     padding: 5%;
@@ -39,15 +41,16 @@
 }
 
 .Team_Name{
+    margin-top: 20px;
     font-size: 35px;
     color: var(--porter_black);
-    font-family: var(--title_font);
+    font-family: 'DM Sans', sans-serif;
     justify-content: left;
 }
 .Team_Title{
     font-size: 25px;
     color: var(--porter_black);
-    font-family: 'calibri light';
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 .teamBioLink{
     font-size: 25px;

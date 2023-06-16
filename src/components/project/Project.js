@@ -42,7 +42,7 @@ export default function Project() {
 					<img
 						className="projectMainImg"
 						src={project.img}
-						alt="Placeholder"
+						alt={project.alt}
 					/>
 				</div>
 			</div>

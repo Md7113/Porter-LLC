@@ -22,7 +22,7 @@ export default function Team() {
 					<img
 						className="memberMainImg"
 						src={member.Img_Color}
-						alt="Placeholder"
+						alt={member.alt}
 					></img>
 				</div>
 				<div class="memberDescSection">

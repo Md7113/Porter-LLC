@@ -62,7 +62,7 @@ const teamList =() => {
             As Project Manager, Zach has responsibility to oversee the entire design and construction process. With over 15 years of experience as both a design professional and a construction project manager, Zach has both the training and practical experience to understand the unique perspectives of all project stakeholders, enabling him to ensure adherence to the owner’s budget, schedule, quality and safety expectations. He has expertise in the healthcare, mission critical and infrastructure upgrade markets, along with experience managing all key project delivery methods, including Design-Bid-Build, GMP, Design-Build, CM at Risk and Integrated Project Delivery. Zach is a Registered Professional Civil Engineer in the State of California and a member of the Design Build Institute of America(DBIA).
     
         `,
-            Title: "Project Manager",
+            Title: "Project Executive",
             Img_Color: zach_color,
             Img_Noir: zach_noir,
             alt: '',
