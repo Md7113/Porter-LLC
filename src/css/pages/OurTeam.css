@@ -48,6 +48,7 @@
     justify-content: left;
 }
 .Team_Title{
+    padding-top: 15px;
     font-size: 25px;
     color: var(--porter_black);
     font-family: 'IBM Plex Sans Arabic', sans-serif;

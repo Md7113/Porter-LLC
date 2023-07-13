@@ -59,7 +59,7 @@
 	font-size: 22px;
 	font-weight: 700;
 	background-color: var(--porter_black);
-	color: var(--red_orange);
+	color: var(--ebb_white);
 	border-radius: 5px;
 }
 .contactBox button:hover {
@@ -112,7 +112,7 @@
 	padding: 10px 40px;
 	margin: 0 auto 30px;
 	background-color: var(--porter_black);
-	color: var(--red_orange);
+	color: var(--ebb_white);
 	border-radius: 5px;
 }
 .businessContactInfo {

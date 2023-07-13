@@ -52,6 +52,7 @@
 	font-weight: 800;
 }
 .memberName{
+	padding-left: 5px;
     font-size: 40px;
 }
 .memberDescription{
