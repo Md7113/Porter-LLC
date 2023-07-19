@@ -17,6 +17,7 @@
     height: 5px;
     margin-bottom:20px;
     background-color: var(--red_orange);
+    border: none;
 }
 .allServices {
 	display: flex;

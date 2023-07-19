@@ -9,12 +9,21 @@
 
 .allTeamContainer h1{
     color: var(--porter_black);
-    font-size: 65px;
+    font-size: 75px;
     border-top: 8px solid var(--porter_black);
-    margin-bottom: 20px;
+    padding-top: 20px;
+	margin-bottom: 20px;
     font-family: var(--title_font);
 }
 
+.allTeamContainer hr{
+    width: 60%;
+    color: var(--porter_black);
+    height: 5px;
+    margin-bottom: 40px;
+    background-color: var(--porter_black);
+    border: none;
+}
 .allTeam {
     display: flex;
     flex-wrap: wrap;

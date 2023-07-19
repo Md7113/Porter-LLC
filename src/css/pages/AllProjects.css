@@ -17,6 +17,7 @@
     height: 5px;
     margin-bottom: 40px;
     background-color: var(--red_orange);
+    border: none;
 }
 .allProjects {
 	display: flex;
