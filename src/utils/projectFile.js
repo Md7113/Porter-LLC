@@ -1,11 +1,11 @@
-import DignityHealth from '../images/Projects/DignityHealth.png';
-import KaiserCapital from '../images/Projects/KaiserCapitalGateWay.jpeg';
-import MasonicHomes from '../images/Projects/MasonicHomes.png';
-import Orrick from '../images/Projects/Orrick.jpeg';
-import SacramentoPediatric from '../images/Projects/SacramentoPediatric.png';
-import SanLeandroHospitals from '../images/Projects/SanLeandroHospital.png'; 
-import SutterHealthWalkIn from '../images/Projects/SutterHealthWalkIn.png';
-import SutterRosevilleHospital from '../images/Projects/SutterRosevilleHospital.jpeg';
+import DignityHealth from '../images/Projects/DignityHealth.webp';
+import KaiserCapital from '../images/Projects/KaiserCapitalGateWay.webp';
+import MasonicHomes from '../images/Projects/MasonicHomes.webp';
+import Orrick from '../images/Projects/Orrick.webp';
+import SacramentoPediatric from '../images/Projects/SacramentoPediatric.webp';
+import SanLeandroHospitals from '../images/Projects/SanLeandroHospital.webp'; 
+import SutterHealthWalkIn from '../images/Projects/SutterHealthWalkIn.webp';
+import SutterRosevilleHospital from '../images/Projects/SutterRosevilleHospital.webp';
 
 /*
 Projects:

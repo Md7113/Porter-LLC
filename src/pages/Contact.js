@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { checkPhoneNumber, validateEmail } from '../utils/helpers';
-import contactImg from '../images/contact_us.jpg';
+import contactImg from '../images/contact_us.webp';
 import '../css/pages/Contact.css';
 import sWal from 'sweetalert';
 import emailjs from '@emailjs/browser';

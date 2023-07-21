@@ -16,6 +16,9 @@
 	font-weight: 900;
 	color: var(--ebb_white);
 }
+.businessContactInfo p{
+	font-family: var(--font-footer);
+}
 
 .aTag{
 	padding-right: 20px;

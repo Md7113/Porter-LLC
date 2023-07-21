@@ -132,6 +132,8 @@
 	.inputTextArea {
 		width: 90%;
 		margin: 20px;
+		padding: 10px;
+		height: 160px;
 	}
 	.contactMe h2 {
 		font-size: 45px;

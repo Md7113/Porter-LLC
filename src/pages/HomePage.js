@@ -3,7 +3,7 @@ import '../css/home/HomeHero.css';
 import Carousel from '../components/Carousel';
 import '../css/components/Carousel.css';
 import HomeSections from '../components/home/HomeSections';
-import homeHero from '../images/Porter_LinkedIn_Cover_Black.png';
+import homeHero from '../images/Porter_LinkedIn_Cover_Black.webp';
 
 const HomePage = () => {
 	return (
