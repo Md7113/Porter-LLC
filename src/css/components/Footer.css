@@ -14,6 +14,7 @@
 }
 .businessContactInfo span {
 	font-weight: 900;
+	font-family: var(--font-footer);
 	color: var(--ebb_white);
 }
 .businessContactInfo p{
